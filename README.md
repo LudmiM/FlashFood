@@ -24,6 +24,16 @@ Con este proyecto, nuestro objetivo es desarrollar un software desde cero para a
 -Trello
 -Slack
 -Figma
+-Html
+-Css
+-Javascript
+-NodeJs
+-Express
+-Sequelize
+-MySQL
+-Dotenv
+-ScreenRec
+
 ### Enlaces del proyecto
 
 -GitHub [Enlace](https://github.com/No-Country/c17-139-n-js.git)
