@@ -5,38 +5,41 @@ personalización de los menús de los comercios, estimación en tiempos de entre
 Con este proyecto, nuestro objetivo es desarrollar un software desde cero para abordar una necesidad específica en el mercado de tecnología de la información. Además de cumplir con esta demanda del mercado, también nos enfocamos en mejorar nuestras habilidades blandas al trabajar en equipo, así como en fortalecer nuestras habilidades técnicas y teóricas a través de la experiencia directa en el desarrollo de software.
 
   ## Integrantes de la experiencia no Country 
-  
-*Agustin Giacomozzi  QA  [Linkedin](https://www.linkedin.com/in/agustin-giacomozzi-400aa0213/)
-*Mariana Carmona QA [Linkedin](https://www.linkedin.com/in/mariana-carmona-87b7a8180/)
-*Norma Soriano FrontEnd [Linkedin](https://www.linkedin.com/in/norma-suriano-dev/)
-*Guido Gutierrez  UX/UI [Linkedin](https://www.linkedin.com/in/guidoguti%C3%A9rrez/)
-*Pablo Spector FullStack [Linkedin](https://www.linkedin.com/in/pablo-spector/)
-*William Rondon FrontEnd [Linkedin](https://www.linkedin.com/in/williams-rond%C3%B3n-1111ab302/)
-*Natanael Leites FrondEnd [Linkedin](http://www.linkedin.com/in/natanael-leites-sanguinet-7769a9218)
-*Jorge Miguel Franco FrontEnd [Linkedin](https://www.linkedin.com/in/jorge-miguel-vera-franco-a15920267/)
-*Ludmila Muñoz BackEnd [Linkedin](https://www.linkedin.com/in/ludmilaml/)
-*Roberto Esposo FrontEnd [Linkedin](https://www.linkedin.com/in/robertoespeso)
-*Irvin Martinez BackEnd [Linkedin](http://www.linkedin.com/in/irvin-martinez-im)
-*William Rondon FrontEnd [Linkedin](https://www.linkedin.com/in/williams-rond%C3%B3n-1111ab302/)
-### Herramientas Utilizadas en el proyecto
 
--Google drives
--Trello
--Slack
--Figma
--Html
--Css
--Javascript
--NodeJs
--Express
--Sequelize
--MySQL
--Dotenv
--ScreenRec
+###                        Back-End
+- [Irvin Martinez](http://www.linkedin.com/in/irvin-martinez-im)
+- [Ludmila Muñoz](https://www.linkedin.com/in/ludmilaml/)|
+###                             FrontEnd
+- [Roberto Esposo](https://www.linkedin.com/in/robertoespeso)
+- [Norma Soriano](https://www.linkedin.com/in/norma-suriano-dev/)
+- [Pablo Spector](https://www.linkedin.com/in/pablo-spector/)
+- [Natanael Leites](http://www.linkedin.com/in/natanael-leites-sanguinet-7769a9218)
+- [William Rondon](https://www.linkedin.com/in/williams-rond%C3%B3n-1111ab302/)
+- [Jorge Miguel Franco](https://www.linkedin.com/in/jorge-miguel-vera-franco-a15920267/)
+ ###                            UX
+- [Guido Gutierrez](https://www.linkedin.com/in/guidoguti%C3%A9rrez/)
+ ###                           Quality assurance
+- [Agustin Giacomozz](https://www.linkedin.com/in/agustin-giacomozzi-400aa0213/)
+- [Mariana Carmona](https://www.linkedin.com/in/mariana-carmona-87b7a8180/)
 
-### Enlaces del proyecto
+## Herramientas Utilizadas en el proyecto
+- Google drives
+- Trello
+- Slack
+- Figma
+- Html
+- Css
+- Javascript
+- NodeJs
+- Express
+- Sequelize
+- MySQL
+- Dotenv
+- ScreenRec
 
--GitHub [Enlace](https://github.com/No-Country/c17-139-n-js.git)
--GoogleDrive [Enlace](https://drive.google.com/drive/folders/1IF1TpWEbj5hD9HSJ8IZCR9Nqat8ggL04)
+## Enlaces del proyecto
 
+- [GitHub](https://github.com/No-Country/c17-139-n-js.git)
+- [GoogleDrive](https://drive.google.com/drive/folders/1IF1TpWEbj5hD9HSJ8IZCR9Nqat8ggL04)
+## 
   
