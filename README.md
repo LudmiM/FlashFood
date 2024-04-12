@@ -5,41 +5,54 @@ personalización de los menús de los comercios, estimación en tiempos de entre
 Con este proyecto, nuestro objetivo es desarrollar un software desde cero para abordar una necesidad específica en el mercado de tecnología de la información. Además de cumplir con esta demanda del mercado, también nos enfocamos en mejorar nuestras habilidades blandas al trabajar en equipo, así como en fortalecer nuestras habilidades técnicas y teóricas a través de la experiencia directa en el desarrollo de software.
 
   ## Integrantes de la experiencia no Country 
+  
+|  Back-End |
+|-----------------------|
+| [Irvin Martinez](http://www.linkedin.com/in/irvin-martinez-im)         |  
+| [Ludmila Muñoz](https://www.linkedin.com/in/ludmilaml/)    | 
 
-###                        Back-End
-- [Irvin Martinez](http://www.linkedin.com/in/irvin-martinez-im)
-- [Ludmila Muñoz](https://www.linkedin.com/in/ludmilaml/)|
-###                             FrontEnd
-- [Roberto Esposo](https://www.linkedin.com/in/robertoespeso)
-- [Norma Soriano](https://www.linkedin.com/in/norma-suriano-dev/)
-- [Pablo Spector](https://www.linkedin.com/in/pablo-spector/)
-- [Natanael Leites](http://www.linkedin.com/in/natanael-leites-sanguinet-7769a9218)
-- [William Rondon](https://www.linkedin.com/in/williams-rond%C3%B3n-1111ab302/)
-- [Jorge Miguel Franco](https://www.linkedin.com/in/jorge-miguel-vera-franco-a15920267/)
- ###                            UX
-- [Guido Gutierrez](https://www.linkedin.com/in/guidoguti%C3%A9rrez/)
- ###                           Quality assurance
-- [Agustin Giacomozz](https://www.linkedin.com/in/agustin-giacomozzi-400aa0213/)
-- [Mariana Carmona](https://www.linkedin.com/in/mariana-carmona-87b7a8180/)
+|  Front-End |
+|-----------------------|
+| [Roberto Esposo](https://www.linkedin.com/in/robertoespeso)     | 
+| [Norma Soriano](https://www.linkedin.com/in/norma-suriano-dev/)    | 
+|[Pablo Spector](https://www.linkedin.com/in/pablo-spector/)        | 
+| [Natanael Leites](http://www.linkedin.com/in/natanael-leites-sanguinet-7769a9218)   | 
+| [William Rondon](https://www.linkedin.com/in/williams-rond%C3%B3n-1111ab302/)      | 
+|  [William Rondon](https://www.linkedin.com/in/williams-rond%C3%B3n-1111ab302/)   | 
+|   [Jorge Miguel Franco](https://www.linkedin.com/in/jorge-miguel-vera-franco-a15920267/)  | 
+
+|UX|
+|-----------|
+|[Guido Gutierrez](https://www.linkedin.com/in/guidoguti%C3%A9rrez/) |
+
+| Quality assurance |
+|-----------------------|
+| [Agustin Giacomozz](https://www.linkedin.com/in/agustin-giacomozzi-400aa0213/)     |
+|[Mariana Carmona](https://www.linkedin.com/in/mariana-carmona-87b7a8180/)|        |
+
 
 ## Herramientas Utilizadas en el proyecto
-- Google drives
-- Trello
-- Slack
-- Figma
-- Html
-- Css
-- Javascript
-- NodeJs
-- Express
-- Sequelize
-- MySQL
-- Dotenv
-- ScreenRec
 
-## Enlaces del proyecto
+| Back-End | Front-End|UX|Qa|
+|-----------------------|---------|----------|----------|
+| NodeJs      | Css|Figma|ScreenRec|
+| MySQL       | Html|     |Excel|
+| Dotenv     | Javascript|
+|  Sequelize              ||
+|Express|
 
-- [GitHub](https://github.com/No-Country/c17-139-n-js.git)
-- [GoogleDrive](https://drive.google.com/drive/folders/1IF1TpWEbj5hD9HSJ8IZCR9Nqat8ggL04)
-## 
-  
+|Herramientas usadas por todo el equipo|
+|--------------|
+|[Trello](https://trello.com/b/V4d3lD3q/gestor-de-pedidos)|
+|[Slack](https://app.slack.com/huddle/T02KS88FB0E/C06QZSRUBBL)|
+|[GoogleDrive](https://drive.google.com/drive/folders/1IF1TpWEbj5hD9HSJ8IZCR9Nqat8ggL04)|
+|[GitHub](https://github.com/No-Country/c17-139-n-js.git)|
+
+## Caracteristicas Principales 
+* Registro de usuarios y inicio de sesion.
+* Formularios especificos para recopilar diferentes tipos de informacion.
+* Personalizacion del menu para comercios
+* Filtro de componentes por categoria.
+ ## Algunas pantallas principales de Flash Food
+
+ 
