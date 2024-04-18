@@ -24,13 +24,9 @@ app
     .use(express.json())
     .use(express.urlencoded({ extended: true }))
 
-
     //middlewares propios
 
     //Rutas
-    //.use('/', indexRouter)
-    //.use('/users', usersRouter)
-    //.use('/shops', shopsRouter)
     .use('/', indexRoutes)
 
    /* .get('/', (req, res) => {
