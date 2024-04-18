@@ -1,12 +1,11 @@
-import "dotenv/config";
-import app from './app.js'
-// import { sequelize } from './config/db.js';
+const app = require('./app');
+const http = require('http');
 
-app.listen(process.env.PORT || 3000, async function () {
-  try {
-    // await sequelize.sync({ force: false })
-  console.log(`server running on http://localhost:${this.address().port}`)
-  } catch (error) {
-    console.log(error);
-  }
+const port = process.env.PORT || 3000;
+app.set('port', port);
+
+const server = http.createServer(app);
+
+server.listen(port, () => {
+    console.log(`Servidor corriendo en el puerto ${port}`);
 });
