@@ -1,39 +1,41 @@
 require('dotenv').config();
 const createError = require('http-errors');
 const express = require('express');
+const cors = require('cors')
 const path = require('path');
 const cookieParser = require('cookie-parser');
-const logger = require('morgan');
+const morgan = require('morgan');
 const methodOverride = require('method-override');
 
-const indexRouter = require('./routes/index.routes');
-const usersRouter = require('./routes/users.routes');
-const shopsRouter = require('./routes/shops.routes');
+const indexRoutes = require('./routes/index.routes');
 
 const session = require('express-session');
 
 const app = express();
 
+app.use(express.static('dist'));
 app
-    .set('views', path.join(__dirname,'..' ,'views'))
-    .set('view engine', 'ejs');
-
-app
-    .use(logger('dev'))
+    .use(morgan('dev'))
     .use(cookieParser())
     .use(methodOverride('_method'))
+    .use(cors())
 
     // Middleware para formularios
     .use(express.json())
-    .use(express.urlencoded({ extended: false }))
-    .use(express.static(path.join(__dirname, '..', 'public')))
+    .use(express.urlencoded({ extended: true }))
+
 
     //middlewares propios
 
     //Rutas
-    .use('/', indexRouter)
+    //.use('/', indexRouter)
     //.use('/users', usersRouter)
     //.use('/shops', shopsRouter)
+    .use('/', indexRoutes)
+
+   /* .get('/', (req, res) => {
+    res.render('pages/home/index')
+    })]*/
 
     //Configuracion de sesion
     .use(session({
