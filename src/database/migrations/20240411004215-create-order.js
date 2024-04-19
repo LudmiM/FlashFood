@@ -10,18 +10,13 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       idCustomer: {
-        type: Sequelize.INTEGER
-      },
-      idProduct: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        allowNull: false,
       },
       idState: {
         type: Sequelize.INTEGER
       },
-      price: {
-        type: Sequelize.INTEGER
-      },
-      available: {
+      finalPrice: {
         type: Sequelize.INTEGER
       },
       createdAt: {

@@ -14,14 +14,14 @@ module.exports = {
         }
         return res.redirect('/');//Debe redirigir a login
     },
-    user: (req, res, next) => {
+    Customer: (req, res, next) => {
         if (req.session.userLogin && (req.session.userLogin.idRole === 2)) {
             return next();
         } else {
             return res.redirect('/');
         }
     },
-    shop: (req, res, next) => {
+    Commerce: (req, res, next) => {
         if (req.session.userLogin && (req.session.userLogin.idRole === 1)) {
             return next();
         } else {

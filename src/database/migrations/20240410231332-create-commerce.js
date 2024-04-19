@@ -13,28 +13,25 @@ module.exports = {
         type: Sequelize.STRING
       },
       email: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false,
       },
       password: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false,
       },
       token: {
         type: Sequelize.STRING
       },
       idRole: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        allowNull: false,
       },
       idLocation: {
         type: Sequelize.INTEGER
       },
       image: {
         type: Sequelize.STRING
-      },
-      certificate: {
-        type: Sequelize.STRING
-      },
-      cuit: {
-        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,
