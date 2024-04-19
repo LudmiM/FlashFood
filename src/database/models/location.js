@@ -21,6 +21,7 @@ module.exports = (sequelize, DataTypes) => {
     neighborhood: DataTypes.STRING
   }, {
     sequelize,
+    timestamps: false,
     modelName: 'Location',
   });
   return Location;

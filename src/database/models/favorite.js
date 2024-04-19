@@ -18,6 +18,7 @@ module.exports = (sequelize, DataTypes) => {
     idCommerce: DataTypes.INTEGER
   }, {
     sequelize,
+    timestamps: false,
     modelName: 'Favorite',
   });
   return Favorite;
