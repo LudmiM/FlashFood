@@ -1,12 +1,7 @@
-import "dotenv/config";
-import app from './app.js'
-// import { sequelize } from './config/db.js';
+require('dotenv').config();
+const app = require('./app');
 
-app.listen(process.env.PORT || 3000, async function () {
-  try {
-    // await sequelize.sync({ force: false })
-  console.log(`server running on http://localhost:${this.address().port}`)
-  } catch (error) {
-    console.log(error);
-  }
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });

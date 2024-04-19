@@ -10,24 +10,21 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       name: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false,
       },
       idCategory: {
         type: Sequelize.INTEGER
       },
       idCommerce: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        allowNull: false,
       },
       description: {
-        type: Sequelize.TEXT
+        type: Sequelize.TEXT,
+        allowNull: false,
       },
       price: {
-        type: Sequelize.INTEGER
-      },
-      currencyType: {
-        type: Sequelize.STRING
-      },
-      time: {
         type: Sequelize.INTEGER
       },
       available: {

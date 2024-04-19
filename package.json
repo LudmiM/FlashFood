@@ -1,59 +1,54 @@
 {
-  "name": "express-sequelize-mvc-basic",
+  "name": "your-project-name",
   "version": "1.0.0",
-  "description": "Basics files and folders to start to develop a server with Express and Sequelize, MVC type",
+  "description": "Project combining front-end and back-end",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-<<<<<<< HEAD
-    "start": "concurrently \"npm run dev\" \"node ./backend/src/bin/www\"",
+    "start": "concurrently \"npm run dev\" \"node src/index.js\"",
     "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "server": "nodemon ./backend/src/bin/www"
-=======
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
->>>>>>> 484482bbeaae76216832baebcffcb21f9bc8206f
+    "db:create": "sequelize db:drop & sequelize db:create & sequelize db:migrate & sequelize db:seed:all",
+    "db:reset": "sequelize db:migrate:undo:all & sequelize db:migrate & sequelize db:seed:all"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "@reduxjs/toolkit": "2.2.3",
     "axios": "1.6.8",
-    "concurrently": "8.2.2",
+    "bcryptjs": "2.4.3",
+    "bootstrap": "5.3.2",
     "cookie-parser": "1.4.6",
+    "cors": "2.8.5",
+    "debug": "2.6.9",
+    "dotenv": "16.4.5",
+    "ejs": "3.1.9",
     "express": "4.19.2",
+    "express-session": "1.17.3",
+    "express-validator": "7.0.1",
     "http-errors": "2.0.0",
+    "method-override": "3.0.0",
     "morgan": "1.10.0",
+    "multer": "1.4.5-lts.1",
+    "mysql2": "3.9.1",
+    "nodemailer": "6.9.13",
+    "nodemon": "3.0.2",
+    "pg": "8.5.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-redux": "9.1.0",
-    "react-router-dom": "6.22.3"
+    "react-router-dom": "6.22.3",
+    "sequelize": "6.37.0"
   },
   "devDependencies": {
     "@types/react": "18.2.43",
     "@types/react-dom": "18.2.17",
     "@vitejs/plugin-react": "4.2.1",
+    "concurrently": "^8.2.2",
     "eslint": "8.55.0",
     "eslint-plugin-react": "7.33.2",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-refresh": "0.4.5",
     "vite": "5.0.8"
-=======
-    "cors": "2.8.5",
-    "dotenv": "16.3.1",
-    "ejs": "^3.1.9",
-    "express": "4.18.2",
-    "mysql2": "^3.9.4",
-    "pg": "8.5.1",
-    "sequelize": "6.3.5"
-  },
-  "devDependencies": {
-    "nodemon": "2.0.22"
->>>>>>> 484482bbeaae76216832baebcffcb21f9bc8206f
   }
 }
