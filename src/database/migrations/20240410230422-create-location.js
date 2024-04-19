@@ -28,6 +28,9 @@ module.exports = {
       },
       address: {
         type: Sequelize.TEXT
+      },
+      comment: {
+        type: Sequelize.TEXT
       }
     });
   },
