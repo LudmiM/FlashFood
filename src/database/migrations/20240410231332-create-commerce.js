@@ -43,6 +43,9 @@ module.exports = {
       image: {
         type: Sequelize.STRING
       },
+      phone: {
+        type: Sequelize.INTEGER
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

@@ -20,7 +20,8 @@ module.exports = (sequelize, DataTypes) => {
     token: DataTypes.STRING,
     idRole: DataTypes.INTEGER,
     idLocation: DataTypes.INTEGER,
-    image: DataTypes.STRING
+    image: DataTypes.STRING,
+    phone: DataTypes.INTEGER,
   }, {
     sequelize,
     modelName: 'Commerce',

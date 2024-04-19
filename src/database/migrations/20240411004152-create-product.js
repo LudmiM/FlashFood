@@ -40,6 +40,10 @@ module.exports = {
       available: {
         type: Sequelize.INTEGER
       },
+      imagen: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
