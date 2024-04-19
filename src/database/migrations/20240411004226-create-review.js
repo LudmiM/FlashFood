@@ -10,10 +10,20 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       idCustomer: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: {
+            tableName: "Customers",
+          }
+        }
       },
       idCommerce: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: {
+            tableName: "Commerces",
+          }
+        }
       },
       comment: {
         type: Sequelize.TEXT

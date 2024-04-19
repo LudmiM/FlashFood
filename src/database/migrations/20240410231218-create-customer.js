@@ -25,10 +25,15 @@ module.exports = {
         type: Sequelize.STRING
       },
       idRole: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: {
+            tableName: "Roles",
+          }
+        }
       },
-      idLocation: {
-        type: Sequelize.INTEGER
+      image: {
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,

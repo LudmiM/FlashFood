@@ -9,20 +9,25 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      idCustommer:{
+        type: Sequelize.INTEGER,
+        references: {
+          model: {
+            tableName: "Custommers",
+          }
+        }
+      },
       country: {
         type: Sequelize.STRING
       },
       province: {
         type: Sequelize.STRING
       },
-      party: {
+      city: {
         type: Sequelize.STRING
       },
-      municipality: {
-        type: Sequelize.STRING
-      },
-      neighborhood: {
-        type: Sequelize.STRING
+      address: {
+        type: Sequelize.TEXT
       }
     });
   },

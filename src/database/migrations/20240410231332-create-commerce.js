@@ -26,9 +26,19 @@ module.exports = {
       idRole: {
         type: Sequelize.INTEGER,
         allowNull: false,
+        references: {
+          model: {
+            tableName: "Roles",
+          }
+        }
       },
       idLocation: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: {
+            tableName: "Locations",
+          }
+        }
       },
       image: {
         type: Sequelize.STRING

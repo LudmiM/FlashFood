@@ -12,9 +12,19 @@ module.exports = {
       idCustomer: {
         type: Sequelize.INTEGER,
         allowNull: false,
+        references: {
+          model: {
+            tableName: "Customers",
+          }
+        }
       },
       idState: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: {
+            tableName: "States",
+          }
+        }
       },
       finalPrice: {
         type: Sequelize.INTEGER

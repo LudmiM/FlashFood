@@ -14,11 +14,21 @@ module.exports = {
         allowNull: false,
       },
       idCategory: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: {
+            tableName: "Categories",
+          }
+        }
       },
       idCommerce: {
         type: Sequelize.INTEGER,
         allowNull: false,
+        references: {
+          model: {
+            tableName: "Commerces",
+          }
+        }
       },
       description: {
         type: Sequelize.TEXT,
