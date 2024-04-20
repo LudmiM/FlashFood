@@ -9,6 +9,18 @@ INSERT INTO `flashfood`.`customers` (`name`, `lastName`, `email`, `password`, `t
 'Roberto', 'Hernández', 'roberto.hernandez@example.com', 'password1617', 'token7', 2, 'image7.jpg', NOW(), NOW()),
 'Claudia', 'Morales', 'claudia.morales@example.com', 'password1819', 'token8', 2, 'image8.jpg', NOW(), NOW());
 
+-- Usuario - Vendedor
+
+INSERT INTO `flashfood`.`commerces` (`name`, `email`, `password`, `token`, `idRole`, `idLocation`, `image`, `createdAt`, `updatedAt`) VALUES
+('La Pizzería', 'pizzeria@example.com', 'securepass1', NULL, 1, 30, 'pizzeria.jpg', NOW(), NOW()),
+'El Rincón Mexicano', 'rincon.mexicano@example.com', 'securepass2', NULL, 1, 31, 'mexicano.jpg', NOW(), NOW()),
+'Sushi House', 'sushi.house@example.com', 'securepass3', NULL, 1, 32, 'sushi.jpg', NOW(), NOW()),
+'Panadería Delicias', 'panaderia.delicias@example.com', 'securepass4', NULL, 1, 33, 'panaderia.jpg', NOW(), NOW()),
+'La Parrilla', 'parrilla@example.com', 'securepass5', NULL, 1, 34, 'parrilla.jpg', NOW(), NOW()),
+'Burger King', 'burger.king@example.com', 'securepass6', NULL, 1, 35, 'burgerking.jpg', NOW(), NOW()),
+'Los Mariscos', 'mariscos@example.com', 'securepass7', NULL, 1, 36, 'mariscos.jpg', NOW(), NOW()),
+'Pasta Italia', 'pasta.italia@example.com', 'securepass8', NULL, 1, 37, 'pastaitalia.jpg', NOW(), NOW());
+
 -- Ubicacion
 
 INSERT INTO `flashfood`.`locations` (`idCustomer`, `country`, `province`, `city`, `address`) VALUES
@@ -28,18 +40,6 @@ INSERT INTO `flashfood`.`locations` (`idCustomer`, `country`, `province`, `city`
 (NULL, 'AR', 'Río Negro', 'Bariloche', 'Avenida Bustillo 1111'),
 (NULL, 'AR', 'Corrientes', 'Corrientes', 'Avenida 3 de Abril 1212'),
 (NULL, 'AR', 'Chaco', 'Resistencia', 'Avenida Sarmiento 1313');
-
--- Usuario - Vendedor
-
-INSERT INTO `flashfood`.`commerces` (`name`, `email`, `password`, `token`, `idRole`, `idLocation`, `image`, `createdAt`, `updatedAt`) VALUES
-('La Pizzería', 'pizzeria@example.com', 'securepass1', NULL, 1, 30, 'pizzeria.jpg', NOW(), NOW()),
-'El Rincón Mexicano', 'rincon.mexicano@example.com', 'securepass2', NULL, 1, 31, 'mexicano.jpg', NOW(), NOW()),
-'Sushi House', 'sushi.house@example.com', 'securepass3', NULL, 1, 32, 'sushi.jpg', NOW(), NOW()),
-'Panadería Delicias', 'panaderia.delicias@example.com', 'securepass4', NULL, 1, 33, 'panaderia.jpg', NOW(), NOW()),
-'La Parrilla', 'parrilla@example.com', 'securepass5', NULL, 1, 34, 'parrilla.jpg', NOW(), NOW()),
-'Burger King', 'burger.king@example.com', 'securepass6', NULL, 1, 35, 'burgerking.jpg', NOW(), NOW()),
-'Los Mariscos', 'mariscos@example.com', 'securepass7', NULL, 1, 36, 'mariscos.jpg', NOW(), NOW()),
-'Pasta Italia', 'pasta.italia@example.com', 'securepass8', NULL, 1, 37, 'pastaitalia.jpg', NOW(), NOW());
 
 -- Producto
 
