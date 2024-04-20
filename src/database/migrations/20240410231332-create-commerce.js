@@ -43,6 +43,9 @@ module.exports = {
       image: {
         type: Sequelize.STRING
       },
+      coverImage: {
+        type: Sequelize.STRING
+      },
       phone: {
         type: Sequelize.INTEGER
       },

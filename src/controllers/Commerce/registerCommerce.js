@@ -15,7 +15,7 @@ module.exports = async (req, res) => {
             meta: {
                 status: 201,
                 data: commerce,
-                url: `api/commerce/update/${commerce.id}`
+                url: `api/commerce/register/${commerce.id}`
             }
         };
 
