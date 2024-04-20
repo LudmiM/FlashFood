@@ -8,8 +8,8 @@ module.exports = async (req, res) => {
         const respuesta = {
             meta: {
                 status: 201,
-                data: commerce,
-                url: `api/commerce/all/${commerces}`
+                data: commerces,
+                url: `api/commerce/all`
             }
         };
 
