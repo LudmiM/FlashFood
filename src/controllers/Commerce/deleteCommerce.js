@@ -1,7 +1,3 @@
-//obtener el id del comercio a eliminar,
-//Buscar todos los productos e ir eliminando
-//Eliminr la ubicaion/locacion del comercio
-//Eliminar el comercio
 const db = require('../../database/models');
 
 module.exports = async (req, res) => {
@@ -14,8 +10,8 @@ module.exports = async (req, res) => {
                     idCommerce: id
                 }
             }
-        );
-
+        );//Eliminar la imagen de la carpeta
+        
         const commerce = await db.Commerce.destroy(
             {
                 where: {
@@ -23,7 +19,7 @@ module.exports = async (req, res) => {
                 },
                 include: [{ model: db.Location, as: 'location' }]
             }
-        );
+        ); //Eliminar la imagen y el banner de la carpeta
 
         const respuesta = {
             meta: {
