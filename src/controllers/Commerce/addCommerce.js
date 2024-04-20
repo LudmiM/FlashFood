@@ -2,30 +2,24 @@ const db = require('../../database/models');
 
 module.exports = async (req, res) => {
     try {
-        const { id } = req.params;
 
-        await db.Commerce.update(
+        const commerce = await db.Commerce.create(
             {
                 name: req.body.name,
                 image: req.body.image,
                 phone: req.body.phone,
-            },
-            {
-                where: { id: id }
             }
         );
 
-        const commerce = await db.Commerce.findByPk(id);
-
         const respuesta = {
             meta: {
-                status: 200,
+                status: 201,
                 data: commerce,
-                url: `api/commerce/update/${id}`
+                url: `api/commerce/update/${commerce.id}`
             }
         };
 
-        res.status(200).json(respuesta);
+        res.status(201).json(respuesta);
     } catch (error) {
         console.error('Error al editar el comercio:', error);
         res.status(error.status || 500).json({
