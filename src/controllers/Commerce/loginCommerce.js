@@ -18,7 +18,7 @@ module.exports = async (req, res) => {
         }
 
         res.cookie('FlahFood_user_Login_01', req.session.userLogin, {
-            maxAge: 1000 * 60 * 5
+            maxAge: 1000 * 60 * 10
         });      
 
         return idRole != 3 ? res.redirect('/') : res.redirect('/administrador')

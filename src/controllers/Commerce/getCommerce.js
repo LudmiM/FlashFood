@@ -3,7 +3,23 @@ const db = require('../../database/models');
 module.exports = async (req, res) => {
     try {
 
-        const commerces = await db.Commerce.findAll({});
+        const { cat } = req.params
+
+        const commerces = await db.Commerce.findAll({
+            include: [
+                {
+                    model: db.Specialty,
+                    include: [
+                        {
+                            model: db.CategoryCommerce,
+                            where: {
+                                idCategory: cat
+                            }
+                        }
+                    ]
+                }
+            ]
+        });
 
         const respuesta = {
             meta: {

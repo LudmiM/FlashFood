@@ -25,7 +25,7 @@ app
     .use('/', indexRoutes)
 
     .get('/', (req, res) => {
-    res.render('pages/home/index')
+        res.render('pages/home/index')
     })
 
     //Configuracion de sesion
