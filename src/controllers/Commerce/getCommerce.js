@@ -8,7 +8,6 @@ module.exports = async (req, res) => {
         const commerces = await db.Commerce.findAll({
             include: [
                 {
-                    model: db.Specialty,
                     include: [
                         {
                             model: db.CategoryCommerce,
@@ -31,7 +30,7 @@ module.exports = async (req, res) => {
 
         res.status(201).json(respuesta);
     } catch (error) {
-        console.error('Error al editar el comercio:', error);
+        console.error('Error al obtener los comercios de la categoria:', error);
         res.status(error.status || 500).json({
             ok: false,
             msg: error.message || "Upss, hubo un error. Sorry!",

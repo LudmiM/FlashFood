@@ -10,7 +10,7 @@ module.exports = async (req, res) => {
                     idCommerce: id
                 }
             }
-        );//Eliminar la imagen de la carpeta
+        );//Falta Eliminar la imagen de la carpeta
         
         const commerce = await db.Commerce.destroy(
             {
@@ -19,7 +19,7 @@ module.exports = async (req, res) => {
                 },
                 include: [{ model: db.Location, as: 'location' }]
             }
-        ); //Eliminar la imagen y el banner de la carpeta
+        ); //Falta Eliminar la imagen y el banner de la carpeta
 
         const respuesta = {
             meta: {
@@ -31,7 +31,7 @@ module.exports = async (req, res) => {
 
         res.status(201).json(respuesta);
     } catch (error) {
-        console.error('Error al editar el comercio:', error);
+        console.error('Error al eliminar el comercio:', error);
         res.status(error.status || 500).json({
             ok: false,
             msg: error.message || "Upss, hubo un error. Sorry!",

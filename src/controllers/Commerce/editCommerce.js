@@ -7,7 +7,7 @@ module.exports = async (req, res) => {
         await db.Commerce.update(
             {
                 name: req.body.name,
-                image: req.body.image,
+                image: req.body.image,//Cuando actulaize la imagen debe eliminar de la carpea la anterior si exixte
                 phone: req.body.phone,
             },
             {

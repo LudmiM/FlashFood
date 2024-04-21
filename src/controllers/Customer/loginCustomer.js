@@ -1,11 +1,11 @@
-const db = require('./../../database/models')
+const db = require('../../database/models')
 
 module.exports = async (req, res) => {
     try {
 
         const emailOfBody = req.body.email;
 
-        const user = await db.Commerce.findOne({
+        const user = await db.Customer.findOne({
             where: {
                 email: emailOfBody
             }
@@ -21,7 +21,7 @@ module.exports = async (req, res) => {
             maxAge: 1000 * 60 * 10
         });      
 
-        return res.status(200).json({ message: 'Commercio logueado'}) 
+        return res.status(200).json({ message: 'Cliente logueado'}) 
     } catch (error) {
         console.error(error);
         return res.status(400).json({ error: 'Error al inicar sesion', message: error.message })
