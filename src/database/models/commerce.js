@@ -16,6 +16,7 @@ module.exports = (sequelize, DataTypes) => {
       Commerce.hasMany(models.Favorite, { foreignKey: 'idCommerce' });
       Commerce.hasMany(models.Product, { foreignKey: 'idCommerce' });
       Commerce.hasMany(models.Review, { foreignKey: 'idCommerce' });
+      Commerce.hasMany(models.Schedule, { foreignKey: 'idCommerce' });
     }
   }
   Commerce.init({

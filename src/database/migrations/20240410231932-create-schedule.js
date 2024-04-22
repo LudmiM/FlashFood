@@ -10,10 +10,20 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       idDay: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: {
+            tableName: "Days",
+          }
+        }
       },
       idCommerce: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: {
+            tableName: "Commerces",
+          }
+        }
       },
       open: {
         type: Sequelize.BOOLEAN
