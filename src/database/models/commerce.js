@@ -28,7 +28,7 @@ module.exports = (sequelize, DataTypes) => {
     idLocation: DataTypes.INTEGER,
     image: DataTypes.STRING,
     coverImage: DataTypes.STRING,
-    phone: DataTypes.INTEGER,
+    phone: DataTypes.BIGINT,
   }, {
     sequelize,
     modelName: 'Commerce',
