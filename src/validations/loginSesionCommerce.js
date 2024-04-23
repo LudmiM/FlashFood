@@ -21,6 +21,7 @@ module.exports = [
             }
             const passwordMatch = await bcrypt.compare(value, user.password);
             if (!passwordMatch) {
+                console.log('Contarseña incorecctaaa')
                 return Promise.reject('Contraseña incorrecta');
             }
         })

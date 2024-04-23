@@ -1,13 +1,18 @@
 const db = require('../../database/models')
+const { validationResult } = require("express-validator");
 
 module.exports = async (req, res) => {
     try {
 
-        const emailOfBody = req.body.email;
+        const errors = validationResult(req);
 
+        if (!errors.isEmpty()) {
+            return res.status(401).json({ message: 'Credenciales invalidas'}) 
+        }
+        
         const user = await db.Customer.findOne({
             where: {
-                email: emailOfBody
+                email: req.body.email
             }
         });
 

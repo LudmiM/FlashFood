@@ -1,14 +1,14 @@
 const express = require("express");
 const router = express.Router();
-const loginSesionCustomer = require('./../validations/loginSesionCommerce')
-const { editCommerce, loginCustomer, createCommerce, deleteCommerce, getCommerce} =  require('./../controllers/Commerce');
+const loginSesionCustomer = require('./../validations/loginSesionCustomer')
+const { editCustomer, loginCustomer, createCustomer, deleteCustomer, getCustomer, getAllCustomer} =  require('./../controllers/Customer');
 
 router
-    .get('/',loginSesionCustomer,loginCustomer)/*
-    .get('/:cat',getCommerce)
-    .post('/create',createCommerce)
-    .put('/update/:id',editCommerce)
-    .delete('/delete/:id', deleteCommerce);*/
-
+    .get('/',getAllCustomer)
+    .get('/:id',getCustomer)
+    .post('/',loginSesionCustomer,loginCustomer)/*
+    .post('/create',createCustomer)
+    .put('/:id',editCustomer)
+    .delete('/:id', deleteCustomer);*/
 
 module.exports = router
