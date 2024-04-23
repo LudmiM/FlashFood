@@ -1,4 +1,5 @@
 # c17-139-n-js
+[Flash Food](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/logo.PNG)
 # Flash Food software de gestión de pedidos
 El proyecto del software de gestión de pedidos, denominado "Flash Food", está diseñado para satisfacer las necesidades del sector E-commerce, ofreciendo una solución integral para facilitar la venta de productos en línea. Dirigido especialmente para comercios como a empresas de alimentos, restaurantes y cadenas de comida, como para clientes que quieren pedir comida. Flash Food proporciona una plataforma intuitiva que agiliza el proceso de pedido y entrega, aumentando la eficiencia operativa y mejorando la experiencia del cliente. Con características como
 personalización de los menús de los comercios, estimación en tiempos de entrega, seguimiento en tiempo real de los niveles de stock, gestión completa de pedidos, incluyendo la capacidad de crear, editar, cancelar y rastrear pedidos, y almacenamiento de información de clientes y preferencias, Flash Food ofrece a los usuarios una mayor variedad en los pedidos y herramientas avanzadas para gestionar sus operaciones de manera efectiva. 
