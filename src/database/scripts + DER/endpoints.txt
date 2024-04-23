@@ -1,0 +1,32 @@
+Rutas para Commercios
+
+Trae todos los commercios [GET]
+http://localhost:3000/commerce/
+
+Trae los comercios que sean del id/categoria indicado [GET]
+http://localhost:3000/commerce/category/cat {cat es un numero}
+
+Inicia sesion [POST]
+http://localhost:3000/commerce/
+
+Rutas para cliente
+
+Inicio de sesion [POST]
+http://localhost:3000/customer/
+
+Trae todas los clientes [GET]
+http://localhost:3000/customer/
+
+Trae un usuuario especifico
+http://localhost:3000/customer/id
+
+Rutas para productos
+
+Trae todos los productos
+http://localhost:3000/product/
+
+Trae un producto especifico
+http://localhost:3000/product/id
+
+Trae todos los productos de un commercio
+http://localhost:3000/product/commerce/id
