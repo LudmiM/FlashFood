@@ -3,31 +3,26 @@ const db = require('../../database/models');
 module.exports = async (req, res) => {
     try {
 
-        const { id } = req.params;
+        const { cat } = req.params;
 
-        const commerce = await db.Commerce.findOne({
-            where: {
-                id: id
-            },
+        const commerces = await db.Commerce.findAll({
             include: [{ 
                 model: db.Location 
+            },{
+                model: db.CategoryCommerce,
+                where: {
+                    idCategory: cat
+                }
             }],
             attributes: { exclude: ['token', 'idRole', 'password', 'createdAt', 'updatedAt'] }
         });
-        const products = await db.Product.findAll({
-            where: {
-                idCommerce: id
-            },
-            attributes: { exclude: ['createdAt', 'updatedAt'] }
-        })
 
         res.status(200).json({
             meta: {
                 status: 200,
-                url: `${req.protocol}://${req.get('host')}/commerce/${id}`,
+                url: `${req.protocol}://${req.get('host')}/commerce/${cat}`,
             },
-            data: commerce,
-            products:products,
+            data: commerces,
             ok: true
         });
     } catch (error) {

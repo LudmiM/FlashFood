@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use strict';
 const {
   Model
@@ -29,28 +28,3 @@ module.exports = (sequelize, DataTypes) => {
   });
   return Location;
 };
-=======
-import Sequelize from "sequelize";
-const { DataTypes } = Sequelize;
-
-const Location = (sequelize) => {
-  sequelize.define(
-    "Location",
-    {
-      id: {
-        type: DataTypes.UUID,
-        defaultValue: DataTypes.UUIDV4,
-        primaryKey: true
-      },
-      country: DataTypes.STRING,
-      province: DataTypes.STRING,
-      party: DataTypes.STRING,
-      municipality: DataTypes.STRING,
-      neighborhood: DataTypes.STRING,
-    },
-    { timestamps: false }
-  );
-};
-
-export default Location;
->>>>>>> 5ae99d3a1504e796c354cfbeb1c62cfa12a90277
