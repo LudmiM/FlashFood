@@ -204,3 +204,12 @@ INSERT INTO `flashfood`.`schedules` (idDay, idCommerce, open, opening, close) VA
 (5, 9, 1, '08:30:00', '18:00:00'), -- Viernes
 (6, 9, 0, NULL, NULL), -- Sábado
 (7, 9, 0, NULL, NULL); 
+
+-- categoria y comercio
+
+INSERT INTO `flashfood`.`categorycommerces` (idCategory, idCommerce) VALUES
+(1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 2),
+(10, 3), (11, 4), (12, 5), (13, 6), (14, 7), (15, 8), (16, 9), (17, 2),
+(18, 3), (19, 4), (1, 3), (2, 4), (3, 5), (4, 6), (5, 7), (6, 8), (7, 9),
+(8, 2), (9, 3), (10, 4), (11, 5), (12, 6), (13, 7), (14, 8), (15, 9),
+(16, 2), (17, 3), (18, 4), (19, 5);

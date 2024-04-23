@@ -3,26 +3,24 @@ const db = require('../../database/models');
 module.exports = async (req, res) => {
     try {
 
-        const { cat } = req.params
+        const { cat } = req.params;
 
         const commerces = await db.Commerce.findAll({
-            include: [
-                {
-                    include: [
-                        {
-                            model: db.CategoryCommerce,
-                            where: {
-                                idCategory: cat
-                            }
-                        }
-                    ]
+            include: [{ 
+                model: db.Location 
+            },{
+                model: db.CategoryCommerce,
+                where: {
+                    idCategory: cat
                 }
-            ]
+            }],
+            attributes: { exclude: ['token', 'idRole', 'password', 'createdAt', 'updatedAt'] }
         });
+
         res.status(201).json({
             meta: {
                 status: 201,
-                url: `${req.protocol}://${req.get('host')}/api/commerces`,
+                url: `${req.protocol}://${req.get('host')}/commerce/${cat}`,
             },
             data: commerces,
             ok: true

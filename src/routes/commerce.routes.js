@@ -11,5 +11,4 @@ router
     .put('/:id',editCommerce)
     .delete('/:id', deleteCommerce);
 
-
 module.exports = router
