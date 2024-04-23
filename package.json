@@ -8,6 +8,7 @@
     "dev": "vite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build",
+    "server": "nodemon src/index.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "db:create": "sequelize db:drop & sequelize db:create & sequelize db:migrate & sequelize db:seed:all",

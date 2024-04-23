@@ -1,11 +1,8 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
+const commerceRoutes = require('./commerce.routes');
 
-
-router
-  .get('/', (req, res) => {
-    res.json(true);
-  });
+router.use('/commerce', commerceRoutes); 
 
 
 module.exports = router;

@@ -16,16 +16,14 @@ module.exports = async (req, res) => {
         );
 
         const commerce = await db.Commerce.findByPk(id);
-
-        const respuesta = {
+        res.status(201).json({
             meta: {
-                status: 200,
-                data: commerce,
-                url: `api/commerce/update/${id}`
-            }
-        };
-
-        res.status(200).json(respuesta);
+                status: 201,
+                url: `${req.protocol}://${req.get('host')}/api/commerce/update/${id}`,
+            },
+            data: commerce,
+            ok: true
+        });
     } catch (error) {
         console.error('Error al editar el comercio:', error);
         res.status(error.status || 500).json({

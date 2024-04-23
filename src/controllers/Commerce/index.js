@@ -3,6 +3,7 @@ const loginCommerce = require("./loginCommerce");
 const createCommerce = require("./registerCommerce");
 const deleteCommerce = require("./deleteCommerce");
 const getCommerce = require("./getCommerce");
+const getAllCommerce = require("./getAllCommerce");
 
 module.exports = {
   editCommerce,
@@ -10,4 +11,5 @@ module.exports = {
   createCommerce,
   deleteCommerce,
   getCommerce,
+  getAllCommerce,
 };

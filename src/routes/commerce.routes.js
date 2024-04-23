@@ -1,14 +1,15 @@
 const express = require("express");
 const router = express.Router();
 const loginSesionCommerce = require('./../validations/loginSesionCommerce')
-const { editCommerce, loginCommerce, createCommerce, deleteCommerce, getCommerce} =  require('./../controllers/Commerce');
+const { editCommerce, loginCommerce, createCommerce, deleteCommerce, getCommerce, getAllCommerce} =  require('./../controllers/Commerce');
 
 router
-    .get('/',loginSesionCommerce,loginCommerce)
+    .get('/',getAllCommerce)
     .get('/:cat',getCommerce)
+    .post('/',loginSesionCommerce,loginCommerce)
     .post('/create',createCommerce)
-    .put('/update/:id',editCommerce)
-    .delete('/delete/:id', deleteCommerce);
+    .put('/:id',editCommerce)
+    .delete('/:id', deleteCommerce);
 
 
 module.exports = router
