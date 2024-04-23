@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use strict';
 const {
   Model
@@ -23,3 +24,20 @@ module.exports = (sequelize, DataTypes) => {
   });
   return Category;
 };
+=======
+import Sequelize from "sequelize";
+
+const Category = (sequelize) => {
+  sequelize.define(
+    "Category",
+    {
+      name: {
+        type: Sequelize.DataTypes.STRING,
+      },
+    },
+    { timestamps: false }
+  );
+};
+
+export default Category;
+>>>>>>> 5ae99d3a1504e796c354cfbeb1c62cfa12a90277

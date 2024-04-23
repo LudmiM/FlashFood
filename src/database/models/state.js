@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use strict';
 const {
   Model
@@ -22,3 +23,24 @@ module.exports = (sequelize, DataTypes) => {
   });
   return State;
 };
+=======
+import Sequelize from "sequelize";
+const { DataTypes } = Sequelize;
+
+const State = (sequelize) => {
+  sequelize.define(
+    "State",
+    {
+      id: {
+        type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4,
+        primaryKey: true
+      },
+      name: DataTypes.STRING
+    },
+    { timestamps: true }
+  );
+};
+
+export default State;
+>>>>>>> 5ae99d3a1504e796c354cfbeb1c62cfa12a90277

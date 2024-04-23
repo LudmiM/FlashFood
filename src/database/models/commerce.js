@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use strict';
 const {
   Model
@@ -35,3 +36,35 @@ module.exports = (sequelize, DataTypes) => {
   });
   return Commerce;
 };
+=======
+import Sequelize from "sequelize";
+const { DataTypes } = Sequelize;
+
+const Commerce = (sequelize) => {
+  sequelize.define(
+    "Commerce",
+    {
+      id: {
+        type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4,
+        primaryKey: true
+      },
+      name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      email: DataTypes.STRING,
+      password: DataTypes.STRING,
+      token: DataTypes.STRING,
+      idRole: DataTypes.INTEGER,
+      idLocation: DataTypes.INTEGER,
+      image: DataTypes.STRING,
+      certificate: DataTypes.STRING,
+      cuit: DataTypes.INTEGER,
+    },
+    { timestamps: true }
+  );
+};
+
+export default Commerce;
+>>>>>>> 5ae99d3a1504e796c354cfbeb1c62cfa12a90277

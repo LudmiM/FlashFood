@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use strict';
 const { Model } = require('sequelize');
 
@@ -19,3 +20,24 @@ module.exports = (sequelize, DataTypes) => {
   
   return Role;
 };
+=======
+import Sequelize from "sequelize";
+const { DataTypes } = Sequelize;
+
+const Role = (sequelize) => {
+  sequelize.define(
+    "Role",
+    {
+      id: {
+        type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4,
+        primaryKey: true
+      },
+      name: DataTypes.STRING
+    },
+    { timestamps: true }
+  );
+};
+
+export default Role;
+>>>>>>> 5ae99d3a1504e796c354cfbeb1c62cfa12a90277

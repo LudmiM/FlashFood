@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use strict';
 const {
   Model
@@ -25,3 +26,28 @@ module.exports = (sequelize, DataTypes) => {
   });
   return Order;
 };
+=======
+import Sequelize from "sequelize";
+const { DataTypes } = Sequelize;
+
+const Order = (sequelize) => {
+  sequelize.define(
+    "Order",
+    {
+      id: {
+        type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4,
+        primaryKey: true
+      },
+      idCustomer: DataTypes.UUID,
+      idProduct: DataTypes.UUID,
+      idState: DataTypes.UUID,
+      price: DataTypes.INTEGER,
+      available: DataTypes.INTEGER,
+    },
+    { timestamps: true }
+  );
+};
+
+export default Order;
+>>>>>>> 5ae99d3a1504e796c354cfbeb1c62cfa12a90277
