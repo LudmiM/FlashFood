@@ -1,15 +1,14 @@
 const express = require("express");
 const router = express.Router();
+const checkRol = require('./../middleware/checkRol');
 const { editProduct, createProduct, deleteProduct, getProduct, getAllProduct, getAllProductOf} =  require('./../controllers/Product');
 
 router
     .get('/',getAllProduct)
     .get('/:id',getProduct)
     .get('/commerce/:id',getAllProductOf)
-    .post('/',createProduct)
-    .put('/:id',editProduct)
-    .delete('/:id',deleteProduct)
+    .post('/',checkRol.Commerce,createProduct)
+    .put('/:id',checkRol.Commerce,editProduct)
+    .delete('/:id',checkRol.Commerce,deleteProduct)
 
 module.exports = router
-//Agregar validadcion de sesion
-//no puede eliminar, editar,ni crear un producto a menos que no haya iniciado sesion
