@@ -8,7 +8,7 @@ router
     .get('/:id',getCustomer)
     .post('/',loginSesionCustomer,loginCustomer)/*
     .post('/create',createCustomer)
-    .put('/:id',editCustomer)
+    .put('/:id',checkRol.Customer,editCustomer)
     .delete('/:id', deleteCustomer);*/
 
 module.exports = router

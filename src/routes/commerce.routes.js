@@ -9,7 +9,7 @@ router
     .get('/category/:cat',filterCommerce)
     .post('/',loginSesionCommerce,loginCommerce)
     .post('/create',createCommerce)
-    .put('/:id',editCommerce)
+    .put('/:id',checkRol.Commerce,editCommerce)
     .delete('/:id', deleteCommerce);
 
 module.exports = router
