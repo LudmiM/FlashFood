@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const checkRol = require('./../middleware/checkRol');
 const loginSesionCustomer = require('./../validations/loginSesionCustomer')
 const { editCustomer, loginCustomer, createCustomer, deleteCustomer, getCustomer, getAllCustomer} =  require('./../controllers/Customer');
 

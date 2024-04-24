@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const checkRol = require('./../middleware/checkRol');
 const loginSesionCommerce = require('./../validations/loginSesionCommerce')
 const { editCommerce, loginCommerce, createCommerce, deleteCommerce, getCommerce, filterCommerce, getAllCommerce} =  require('./../controllers/Commerce');
 

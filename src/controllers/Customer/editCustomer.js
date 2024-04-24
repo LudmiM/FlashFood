@@ -4,7 +4,7 @@ module.exports = async (req, res) => {
     try {
         const { id } = req.params;
 
-        await db.Commerce.update(
+        await db.Customer.update(
             {
                 name: req.body.name,
                 image: req.body.image,//Cuando actulaize la imagen debe eliminar de la carpea la anterior si exixte
@@ -15,13 +15,13 @@ module.exports = async (req, res) => {
             }
         );
 
-        const commerce = await db.Commerce.findByPk(id);
+        const customer = await db.Customer.findByPk(id);
         res.status(201).json({
             meta: {
                 status: 201,
-                url: `${req.protocol}://${req.get('host')}/api/commerce/update/${id}`,
+                url: `${req.protocol}://${req.get('host')}/api/customer/update/${id}`,
             },
-            data: commerce,
+            data: customer,
             ok: true
         });
     } catch (error) {

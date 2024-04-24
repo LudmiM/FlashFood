@@ -5,7 +5,7 @@ module.exports = async (req, res) => {
 
         const { id } = req.params;
 
-        const commerces = await db.Customer.findOne({
+        const customers = await db.Customer.findOne({
             where:{
                 id:id
             },
@@ -17,7 +17,7 @@ module.exports = async (req, res) => {
                 status: 201,
                 url: `${req.protocol}://${req.get('host')}/customer/${id}`,
             },
-            data: commerces,
+            data: customers,
             ok: true
         });
     } catch (error) {
