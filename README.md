@@ -74,6 +74,4 @@ Con este proyecto, nuestro objetivo es desarrollar un software desde cero para a
 ![](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/footer.PNG)
 
 ## Documentacion relacionada al proyecto
-### QA
-* [ Plan de Pruebas](https://docs.google.com/document/d/1uNFGGDOqu4Xd_wtQ_n0aTR65lQ-XTUBy005zYHK7LTw/edit#heading=h.z6ne0og04bp5)
-* [Casos de Prueba](https://docs.google.com/spreadsheets/d/1Zdruj0FBOybIfIrOowAq87GgiSN8eQxqP5NDPC0Wfyk/edit)
+#### QA---> [ Plan de Pruebas](https://docs.google.com/document/d/1uNFGGDOqu4Xd_wtQ_n0aTR65lQ-XTUBy005zYHK7LTw/edit#heading=h.z6ne0og04bp5) ,[Casos de Prueba](https://docs.google.com/spreadsheets/d/1Zdruj0FBOybIfIrOowAq87GgiSN8eQxqP5NDPC0Wfyk/edit)  y [Historias de Usuario](https://docs.google.com/document/d/192o-AqNiYILRIHZqI663d4rw9WhDnYAvYOy5pFhhHLc/edit)
