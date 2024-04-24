@@ -6,6 +6,7 @@ router
     .get('/',getAllProduct)
     .get('/:id',getProduct)
     .get('/commerce/:id',getAllProductOf)
+    .post('/',createProduct)
     .put('/:id',editProduct)
 
 module.exports = router
