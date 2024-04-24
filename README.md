@@ -14,23 +14,22 @@ Con este proyecto, nuestro objetivo es desarrollar un software desde cero para a
 
 | ![](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/frontEnd1.PNG) |
 |-----------------------|
-| [Roberto Esposo](https://www.linkedin.com/in/robertoespeso)     | 
-| [Norma Soriano](https://www.linkedin.com/in/norma-suriano-dev/)    | 
-|[Pablo Spector](https://www.linkedin.com/in/pablo-spector/)        | 
+| [Roberto Espeso](https://www.linkedin.com/in/robertoespeso)     | 
+| [Norma Suriano](https://www.linkedin.com/in/norma-suriano-dev/)    | 
+| [Pablo Spector](https://www.linkedin.com/in/pablo-spector/)        | 
 | [Natanael Leites](http://www.linkedin.com/in/natanael-leites-sanguinet-7769a9218)   | 
-| [William Rondon](https://www.linkedin.com/in/williams-rond%C3%B3n-1111ab302/)      | 
-|  [William Rondon](https://www.linkedin.com/in/williams-rond%C3%B3n-1111ab302/)   | 
-|   [Jorge Miguel Franco](https://www.linkedin.com/in/jorge-miguel-vera-franco-a15920267/)  | 
+| [Williams Rondón](https://www.linkedin.com/in/williams-rond%C3%B3n-1111ab302/)      | 
+| [Jorge Miguel Franco](https://www.linkedin.com/in/jorge-miguel-vera-franco-a15920267/)  | 
 
 |![](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/ux.PNG)|
 |-----------|
-|[Guido Gutierrez](https://www.linkedin.com/in/guidoguti%C3%A9rrez/) |
+| [Guido Gutierrez](https://www.linkedin.com/in/guidoguti%C3%A9rrez/) |
 
 
 |![](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/qa.PNG)  |
 |-----------------------|
 | [Agustin Giacomozz](https://www.linkedin.com/in/agustin-giacomozzi-400aa0213/)     |
-|[Mariana Carmona](https://www.linkedin.com/in/mariana-carmona-87b7a8180/)|        |
+| [Mariana Carmona](https://www.linkedin.com/in/mariana-carmona-87b7a8180/)|        |
 
 
 ## Herramientas Utilizadas en el proyecto
