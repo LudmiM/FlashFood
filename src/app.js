@@ -1,20 +1,42 @@
-import dotenv from 'dotenv';
-import express from 'express';
-import cors from 'cors';
-import routes from './routes/index.js';
+require('dotenv').config();
+const express = require('express');
+const cors = require('cors')
+const cookieParser = require('cookie-parser');
+const morgan = require('morgan');
+const methodOverride = require('method-override');
+const checkLocalSession = require('./middleware/checkLocalSession');
+const checkCookie = require('./middleware/checkCookie');
+const session = require('express-session');
 
-//import './config/db.js'
+const indexRoutes = require('./routes/index.routes');
 
 const app = express();
-app.use(express.static('dist'));
-app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 
-app.use('/api/', routes);
+app
+    .use(express.static('dist'))
+    .use(morgan('dev'))
+    .use(cookieParser())
+    .use(methodOverride('_method'))
+    .use(cors())
+    .use(express.json())
+    .use(express.urlencoded({ extended: true }))
 
-app.get('/', (req, res) => {
-  res.render('pages/home/index')
-})
+    //Configuracion de sesion
+    .use(session({
+        secret: 'FlashFood',
+        resave: true, 
+        saveUninitialized: true
+    }))
 
-export default app
+    //middlewares propios
+    .use(checkCookie)
+    .use(checkLocalSession)
+    
+    //Rutas
+    .use('/', indexRoutes)
+
+    .get('/', (req, res) => {
+        res.render('pages/home/index')
+    })
+
+module.exports = app
