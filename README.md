@@ -56,17 +56,17 @@ Con este proyecto, nuestro objetivo es desarrollar un software desde cero para a
 * Filtro de ubicacion del usuario
 * Carrito de compras
  ## Algunas pantallas principales de Flash Food
- * Pagina Principal
+ * Pagina Principal (Home)
    
  ![](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/HomePage.PNG)
 
- * Perfil de categorias
+ * Pantalla filtrado de categorias
 
  ![](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/Perfil%20de%20tienda%20de%20categoria.PNG)
 
  * Perfil de Restaurante/Comercio
    
-![](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/Perfil%20de%20tienda%20de%20categoria.PNG)
+![]((https://github.com/No-Country/c17-139-n-js/blob/ff5805082baa05006fd5da77fc68c38f5e9b0ece/Material/ImgsReadMe/perfilTienda.png))
 
 * Footer
 
