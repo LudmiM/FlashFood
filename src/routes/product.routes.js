@@ -8,5 +8,8 @@ router
     .get('/commerce/:id',getAllProductOf)
     .post('/',createProduct)
     .put('/:id',editProduct)
+    .delete('/:id',deleteProduct)
 
 module.exports = router
+//Agregar validadcion de sesion
+//no puede eliminar, editar,ni crear un producto a menos que no haya iniciado sesion
