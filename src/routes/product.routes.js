@@ -6,5 +6,6 @@ router
     .get('/',getAllProduct)
     .get('/:id',getProduct)
     .get('/commerce/:id',getAllProductOf)
+    .put('/:id',editProduct)
 
 module.exports = router
