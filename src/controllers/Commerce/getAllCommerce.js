@@ -16,7 +16,7 @@ module.exports = async (req, res) => {
             ok: true
         });
     } catch (error) {
-        console.error('Error al obtener los comercios de la categoria:', error);
+        console.error('Error al obtener los comercios:', error);
         res.status(error.status || 500).json({
             ok: false,
             msg: error.message || "Upss, hubo un error. Sorry!",

@@ -19,7 +19,7 @@ module.exports = async (req, res) => {
         res.status(201).json({
             meta: {
                 status: 201,
-                url: `${req.protocol}://${req.get('host')}/api/commerce/update/${id}`,
+                url: `${req.protocol}://${req.get('host')}/api/commerce/${id}`,
             },
             data: commerce,
             ok: true

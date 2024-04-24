@@ -10,16 +10,14 @@ module.exports = async (req, res) => {
                 phone: req.body.phone,
             }
         );
-
-        const respuesta = {
+        res.status(201).json({
             meta: {
                 status: 201,
-                data: commerce,
-                url: `api/commerce/register/${commerce.id}`
-            }
-        };
-
-        res.status(201).json(respuesta);
+                url: `${req.protocol}://${req.get('host')}/commerce/create/`,
+            },
+            data: commerce,
+            ok: true
+        });
     } catch (error) {
         console.error('Error al registrar el comercio:', error);
         res.status(error.status || 500).json({
