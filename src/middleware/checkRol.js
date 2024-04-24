@@ -8,7 +8,7 @@ module.exports = {
             return res.redirect('/');//Debe redirigir a login
         }
     },
-    logged: (req, res, next) => {
+    Logged: (req, res, next) => {
         if (req.session.userLogin && (req.session.userLogin.idRole === 3 || req.session.userLogin.idRole === 2 || req.session.userLogin.idRole === 1)) {
             return next();
         }
