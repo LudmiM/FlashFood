@@ -11,7 +11,9 @@ module.exports = async (req, res) => {
             createdAt : new Date(),
             updatedAt : new Date()
         });
-    
+        
+        //await sendEmail(res, email, 'Welcome to Klinika Merchacovz', templatePatientRegister(fullname))
+
         res.status(201).json({
             meta: {
                 status: 201,

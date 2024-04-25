@@ -7,7 +7,9 @@ module.exports = async (req, res) => {
             {idState:3},
             {where:{ id:id }}
         );
-    
+        
+        //await sendEmail(res, email, 'Welcome to Klinika Merchacovz', templatePatientRegister(fullname))
+
         res.status(201).json({
             meta: {
                 status: 201,
