@@ -5,11 +5,21 @@ module.exports = async (req, res) => {
 
         const { id } = req.params;
 
-        //si el rol es cliente entonces el usurio cliente tambien se guarda, se pide ys e guarda
         await db.Location.destroy(
             { where: { id: id } }
         );
-    
+
+        if (req.session.userLogin.idRole === 1){
+            await db.Commerce.update(
+                {
+                    idLocation:null
+                },
+                {
+                    where: { id: req.session.userLogin.id }
+                }
+            );
+        }
+
         res.status(200).json({
             meta: {
                 status: 200,

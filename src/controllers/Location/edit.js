@@ -9,9 +9,9 @@ module.exports = async (req, res) => {
         if (!country || !province || !city || !address) {
             throw new Error('Los campos son necesarios.')
         }
-        //si el rol es cliente entonces el usurio cliente tambien se guarda, se pide ys e guarda
+        
         await db.Location.update(
-            { country, province, city, comment, address, idCustomer },
+            { country, province, city, comment, address },
             { where: { id: id } }
         );
     

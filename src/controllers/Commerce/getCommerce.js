@@ -11,6 +11,9 @@ module.exports = async (req, res) => {
             },
             include: [{ 
                 model: db.Location 
+            },
+            { 
+                model: db.Schedule
             }],
             attributes: { exclude: ['token', 'idRole', 'password', 'createdAt', 'updatedAt'] }
         });

@@ -4,10 +4,13 @@ module.exports = async (req, res) => {
     try {
   
         const {country, province, city, comment, address} = req.body
-        const  idCustomer = req.session.userLogin.id
 
         if (!country || !province || !city || !address) {
             throw new Error('Los campos son necesarios.')
+        }
+        var idCustomer = NULL
+        if (req.session.userLogin.idRole === 2){
+            idCustomer = req.session.userLogin.id
         }
     
         const location = await db.Location.create({
