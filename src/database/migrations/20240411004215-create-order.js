@@ -18,6 +18,15 @@ module.exports = {
           }
         }
       },
+      idCommerce: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: {
+            tableName: "Commerces",
+          }
+        }
+      },
       idState: {
         type: Sequelize.INTEGER,
         references: {

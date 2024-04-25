@@ -9,8 +9,7 @@ module.exports = async (req, res) => {
         const product = await db.Product.update({
             name, idCategory, idCommerce, description, price, available, image,
             where:{
-                id:id
-            },
+                id:id },
             attributes: { exclude: ['createdAt', 'updatedAt'] }
         });
         
