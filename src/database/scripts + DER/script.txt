@@ -1,0 +1,135 @@
+-- Usuario - Cliente
+INSERT INTO `flashfood`.`customers` (`name`, `lastName`, `email`, `password`, `token`, `idRole`, `image`, `createdAt`, `updatedAt`) VALUES
+('Carlos', 'Gómez', 'carlos.gomez@example.com', 'password123', 'token1', 2, 'image1.jpg', NOW(), NOW()),
+'Juan', 'Martínez', 'juan.martinez@example.com', 'password456', 'token2', 2, 'image2.jpg', NOW(), NOW()),
+'María', 'Fernández', 'maria.fernandez@example.com', 'password789', 'token3', 2, 'image3.jpg', NOW(), NOW()),
+'Laura', 'Pérez', 'laura.perez@example.com', 'password1011', 'token4', 2, 'image4.jpg', NOW(), NOW()),
+'Andrés', 'Ramírez', 'andres.ramirez@example.com', 'password1213', 'token5', 2, 'image5.jpg', NOW(), NOW()),
+'Sofía', 'García', 'sofia.garcia@example.com', 'password1415', 'token6', 2, 'image6.jpg', NOW(), NOW()),
+'Roberto', 'Hernández', 'roberto.hernandez@example.com', 'password1617', 'token7', 2, 'image7.jpg', NOW(), NOW()),
+'Claudia', 'Morales', 'claudia.morales@example.com', 'password1819', 'token8', 2, 'image8.jpg', NOW(), NOW());
+
+-- Usuario - Vendedor
+
+INSERT INTO `flashfood`.`commerces` (`name`, `email`, `password`, `token`, `idRole`, `idLocation`, `image`, `createdAt`, `updatedAt`) VALUES
+('La Pizzería', 'pizzeria@example.com', 'securepass1', NULL, 1, 30, 'pizzeria.jpg', NOW(), NOW()),
+'El Rincón Mexicano', 'rincon.mexicano@example.com', 'securepass2', NULL, 1, 31, 'mexicano.jpg', NOW(), NOW()),
+'Sushi House', 'sushi.house@example.com', 'securepass3', NULL, 1, 32, 'sushi.jpg', NOW(), NOW()),
+'Panadería Delicias', 'panaderia.delicias@example.com', 'securepass4', NULL, 1, 33, 'panaderia.jpg', NOW(), NOW()),
+'La Parrilla', 'parrilla@example.com', 'securepass5', NULL, 1, 34, 'parrilla.jpg', NOW(), NOW()),
+'Burger King', 'burger.king@example.com', 'securepass6', NULL, 1, 35, 'burgerking.jpg', NOW(), NOW()),
+'Los Mariscos', 'mariscos@example.com', 'securepass7', NULL, 1, 36, 'mariscos.jpg', NOW(), NOW()),
+'Pasta Italia', 'pasta.italia@example.com', 'securepass8', NULL, 1, 37, 'pastaitalia.jpg', NOW(), NOW());
+
+-- Ubicacion
+
+INSERT INTO `flashfood`.`locations` (`idCustomer`, `country`, `province`, `city`, `address`) VALUES
+(1, 'AR', 'Buenos Aires', 'Buenos Aires', 'Avenida de Mayo 123'),
+(2, 'AR', 'Córdoba', 'Córdoba', 'Boulevard San Juan 456'),
+(3, 'AR', 'Santa Fe', 'Rosario', 'Calle Santa Fe 789'),
+(4, 'AR', 'Mendoza', 'Mendoza', 'San Martín 101'),
+(5, 'AR', 'Salta', 'Salta', 'España 202'),
+(6, 'AR', 'Tucumán', 'San Miguel de Tucumán', 'San Lorenzo 303'),
+(7, 'AR', 'Misiones', 'Posadas', 'Avenida Uruguay 404'),
+(8, 'AR', 'Entre Ríos', 'Paraná', 'Urquiza 505'),
+(NULL, 'AR', 'San Juan', 'San Juan', '25 de Mayo 606'),
+(NULL, 'AR', 'La Pampa', 'Santa Rosa', 'Avenida Luro 707'),
+(NULL, 'AR', 'Neuquén', 'Neuquén', 'Avenida Argentina 808'),
+(NULL, 'AR', 'Chubut', 'Comodoro Rivadavia', 'Rivadavia 909'),
+(NULL, 'AR', 'San Luis', 'San Luis', 'Avenida España 1010'),
+(NULL, 'AR', 'Río Negro', 'Bariloche', 'Avenida Bustillo 1111'),
+(NULL, 'AR', 'Corrientes', 'Corrientes', 'Avenida 3 de Abril 1212'),
+(NULL, 'AR', 'Chaco', 'Resistencia', 'Avenida Sarmiento 1313');
+
+-- Producto
+
+INSERT INTO `flashfood`.`products` (`name`, `idCategory`, `idCommerce`, `description`, `price`, `available`, `createdAt`, `updatedAt`) VALUES
+('Pizza Margherita', 1, 30, 'Pizza con tomate, mozzarella y albahaca.', 12, 20, NOW(), NOW()),
+'Burrito de Carne', 2, 31, 'Burrito de carne asada con guacamole.', 10, 15, NOW(), NOW()),
+'Nigiri de Salmón', 3, 32, 'Nigiri de salmón fresco sobre arroz.', 8, 30, NOW(), NOW()),
+'Croissants', 4, 33, 'Croissants recién horneados.', 3, 50, NOW(), NOW()),
+'Choripán', 5, 34, 'Choripán con chimichurri.', 6, 25, NOW(), NOW()),
+'Hamburguesa Clásica', 6, 35, 'Hamburguesa con carne de res, lechuga, tomate y queso.', 9, 40, NOW(), NOW()),
+'Ceviche de Pescado', 7, 36, 'Ceviche de pescado fresco con limón y cebolla.', 15, 10, NOW(), NOW()),
+'Pasta Carbonara', 8, 37, 'Pasta con crema, huevo, panceta y queso.', 11, 15, NOW(), NOW()),
+'Pizza Pepperoni', 1, 30, 'Pizza con pepperoni y queso mozzarella.', 14, 25, NOW(), NOW()),
+'Tacos al Pastor', 2, 31, 'Tacos de cerdo marinado con piña.', 7, 35, NOW(), NOW()),
+'Sashimi de Atún', 3, 32, 'Sashimi de atún rojo fresco.', 13, 20, NOW(), NOW()),
+'Panes Dulces', 4, 33, 'Variedad de panes dulces recién horneados.', 4, 45, NOW(), NOW()),
+('Ensalada César', 9, 30, 'Ensalada César con pollo, parmesano y aderezo.', 7, 20, NOW(), NOW()),
+'Chiles Rellenos', 10, 31, 'Chiles rellenos de queso y carne.', 9, 25, NOW(), NOW()),
+'Ramen de Pollo', 11, 32, 'Ramen con caldo de pollo y verduras.', 12, 30, NOW(), NOW()),
+'Pastel de Chocolate', 12, 33, 'Pastel de chocolate con glaseado.', 6, 15, NOW(), NOW()),
+'Asado de Tira', 13, 34, 'Asado de tira de res a la parrilla.', 18, 10, NOW(), NOW()),
+'Pollo Frito', 14, 35, 'Pollo frito crujiente con especias.', 10, 40, NOW(), NOW()),
+'Pasta Alfredo', 15, 36, 'Pasta con salsa Alfredo cremosa.', 11, 25, NOW(), NOW()),
+'Pizza Hawaiana', 1, 37, 'Pizza con jamón, piña y queso mozzarella.', 13, 35, NOW(), NOW()),
+'Empanadas de Carne', 16, 30, 'Empanadas de carne con especias.', 4, 30, NOW(), NOW()),
+'Pozole', 10, 31, 'Pozole con maíz y carne de cerdo.', 8, 20, NOW(), NOW()),
+'Tempura de Verduras', 17, 32, 'Verduras en tempura crujientes.', 7, 30, NOW(), NOW()),
+'Muffins de Arándanos', 12, 33, 'Muffins de arándanos recién horneados.', 5, 40, NOW(), NOW());
+
+-- Favoritos
+
+INSERT INTO `flashfood`.`favorites` (`idCustomer`, `idCommerce`) VALUES
+(1, 30), (1, 31), (1, 34),
+(2, 32), (2, 33), (2, 30),
+(3, 34), (3, 35),
+(4, 36), (4, 37),
+(5, 30), (5, 31),
+(6, 32), (6, 33),
+(7, 34), (7, 35),
+(8, 36), (8, 37);
+
+-- Ordenes
+
+INSERT INTO `flashfood`.`orders` (`idCustomer`, `idState`, `finalPrice`, `createdAt`, `updatedAt`) VALUES
+(1, 1, 35, NOW(), NOW()),
+(2, 2, 50, NOW(), NOW()),
+(3, 3, 40, NOW(), NOW()),
+(4, 1, 30, NOW(), NOW()),
+(5, 2, 55, NOW(), NOW()),
+(6, 3, 60, NOW(), NOW()),
+(7, 1, 45, NOW(), NOW()),
+(8, 2, 50, NOW(), NOW()),
+(1, 3, 65, NOW(), NOW()),
+(2, 1, 70, NOW(), NOW()),
+(3, 2, 80, NOW(), NOW()),
+(4, 3, 75, NOW(), NOW());
+
+-- Detalle de orden
+
+INSERT INTO `flashfood`.`orderdetails` (`idOrder`, `idProduct`, `quantity`, `unitPrice`) VALUES
+(1, 1, 2, 20), (1, 2, 1, 15),
+(2, 3, 3, 30), (2, 4, 2, 25),
+(3, 5, 1, 35), (3, 6, 2, 18),
+(4, 7, 1, 15), (4, 8, 3, 10),
+(5, 9, 2, 50), (5, 10, 1, 60),
+(6, 11, 2, 45), (6, 12, 1, 40),
+(7, 1, 2, 20), (7, 2, 2, 15),
+(8, 3, 3, 30), (8, 4, 2, 25),
+(9, 5, 1, 35), (9, 6, 2, 18),
+(10, 7, 1, 15), (10, 8, 3, 10),
+(11, 9, 2, 50), (11, 10, 1, 60),
+(12, 11, 2, 45), (12, 12, 1, 40), (12, 1, 3, 20), (12, 2, 2, 15);
+
+-- Review
+
+INSERT INTO `flashfood`.`reviews` (`idCustomer`, `idCommerce`, `comment`, `score`, `createdAt`, `updatedAt`) VALUES
+(1, 30, 'Excelente servicio y comida deliciosa.', 5, NOW(), NOW()),
+(2, 31, 'Buen ambiente, pero la comida podría mejorar.', 3, NOW(), NOW()),
+(3, 32, 'Increíble comida y atención al cliente.', 5, NOW(), NOW()),
+(4, 33, 'El lugar es agradable, pero el servicio es lento.', 2, NOW(), NOW()),
+(5, 34, 'Gran experiencia, los platos son exquisitos.', 4, NOW(), NOW()),
+(6, 35, 'Servicio rápido y comida deliciosa.', 4, NOW(), NOW()),
+(7, 36, 'La comida es muy buena, pero el local estaba muy lleno.', 3, NOW(), NOW()),
+(8, 37, 'Excelente relación calidad-precio.', 5, NOW(), NOW()),
+(1, 31, 'El servicio podría mejorar, pero la comida es buena.', 3, NOW(), NOW()),
+(2, 32, 'La atención al cliente es excelente.', 5, NOW(), NOW()),
+(3, 33, 'Comida deliciosa y buen ambiente.', 4, NOW(), NOW()),
+(4, 34, 'Un lugar agradable con un buen menú.', 4, NOW(), NOW());
+
+
+
+
+
