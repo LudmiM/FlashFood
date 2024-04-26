@@ -8,8 +8,7 @@ Con este proyecto, nuestro objetivo es desarrollar un software desde cero para a
   ## Integrantes de la experiencia no Country 
   
 |![](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/backend1.PNG) |
-|-----------------------|
-| [Irvin Martinez](http://www.linkedin.com/in/irvin-martinez-im)         |  
+|-----------------------| 
 | [Ludmila Muñoz](https://www.linkedin.com/in/ludmilaml/)    | 
 
 | ![](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/frontEnd1.PNG) |
@@ -39,7 +38,7 @@ Con este proyecto, nuestro objetivo es desarrollar un software desde cero para a
 | NodeJs      | Css|Figma|ScreenRec|
 | MySQL       | Html|     |Excel|
 | Dotenv     | Javascript|
-|  Sequelize              ||
+|  Sequelize              |React|
 |Express|
 
 ## Herramientas usadas por todo el equipo
@@ -55,6 +54,8 @@ Con este proyecto, nuestro objetivo es desarrollar un software desde cero para a
 * Filtro de componentes por categoria.
 * Filtro de ubicacion del usuario
 * Carrito de compras
+* Perfil de tienda
+* 
  ## Algunas pantallas principales de Flash Food
  * Pagina Principal
    
@@ -74,3 +75,5 @@ Con este proyecto, nuestro objetivo es desarrollar un software desde cero para a
 
 ## Documentacion relacionada al proyecto
 #### QA---> [ Plan de Pruebas](https://docs.google.com/document/d/1uNFGGDOqu4Xd_wtQ_n0aTR65lQ-XTUBy005zYHK7LTw/edit#heading=h.z6ne0og04bp5) ,[Casos de Prueba](https://docs.google.com/spreadsheets/d/1Zdruj0FBOybIfIrOowAq87GgiSN8eQxqP5NDPC0Wfyk/edit)  y [Historias de Usuario](https://docs.google.com/document/d/192o-AqNiYILRIHZqI663d4rw9WhDnYAvYOy5pFhhHLc/edit)
+#### UX--->[Analisis e investiacion de diseño](https://www.figma.com/file/qsUDtf5e4EY5Wfr3M4Vvzt/FlashFoodApp?type=design&node-id=0-1&mode=design&t=IAYB7KIsAApGNtuI-0)
+#### Backend---> 
