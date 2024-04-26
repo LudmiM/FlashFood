@@ -29,7 +29,9 @@ Con este proyecto, nuestro objetivo es desarrollar un software desde cero para a
 
 |![](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/qa.PNG)  |
 |-----------------------|
+
 | [Agustin Giacomozzi](https://www.linkedin.com/in/agustin-giacomozzi-400aa0213/)     |
+
 | [Mariana Carmona](https://www.linkedin.com/in/mariana-carmona-87b7a8180/)|        |
 
 
@@ -59,17 +61,19 @@ Con este proyecto, nuestro objetivo es desarrollar un software desde cero para a
 * Perfil de tienda
 * 
  ## Algunas pantallas principales de Flash Food
- * Pagina Principal
+ * Pagina Principal (Home)
    
  ![](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/HomePage.PNG)
 
- * Perfil de categorias
+ * Pantalla filtrado de categorias
 
  ![](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/Perfil%20de%20tienda%20de%20categoria.PNG)
 
  * Perfil de Restaurante/Comercio
    
+
 ![](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/carta%20de%20retaurante.PNG)
+
 
 * Footer
 
