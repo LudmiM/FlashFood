@@ -1,0 +1,164 @@
+
+
+  :root{
+    --orange:#F98820;
+    --darkGray: #4D4A4A;
+    --darkGray2: #242323;
+    --lightGray:#ACABAB;
+    --yellow:#F0C514;
+    --lightGreen:#65D762;
+    --darkOrange:#893D05;
+    --withe:#FFFFFF;
+    --text-cards-font-family: "Inter", sans-serif;
+    --title-size:1.7vw;
+    --subtitle-size:1.3vw;
+    --text-size:0.9vw
+  }
+body{
+    background-color: #242323;
+}
+.store-container{
+    font-family: var(--text-cards-font-family);
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+}
+.cardStore-link{
+    width: calc(30%);
+    border: none;
+    border-radius: 20px;
+    background-color: var(--darkGray);
+    text-decoration: none;
+    color: var(--withe);
+}
+.cardStore-linkClosed{
+    opacity: 30%;
+    width: calc(30%);
+    border: none;
+    border-radius: 20px;
+    background-color: var(--darkGray);
+    text-decoration: none;
+    color: var(--withe);
+}
+.cardStore-rate{
+    display: flex;
+}
+.cardStore{
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    margin: 20px;
+    background-color: var(--darkGray);
+}
+
+.cardStore-containerBannerImg{
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.cardStore-bannerImg{
+    border-radius: 20px 20px 0px 0px;
+    max-width: 100%;
+    height: auto;
+}
+.cardStore-logoImg{
+    width: 55px;
+    border-radius: 50%;
+}
+
+
+
+.cardStore-storeInfo{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.cardStore-containerDelivery{
+    display: flex;
+    gap: 5px;
+}
+.cardStore-firstInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.cardStore-rateAndState{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cardStore-title, .cardStore-delivery, .cardStore-deliveryTime, .cardStore-stateStoreOpen, .cardStore-stateStoreClosed, .cardStore-rateValue{
+    margin: 0;
+}
+.cardStore-delivery, .cardStore-deliveryTime, .cardStore-stateStoreOpen, .cardStore-stateStoreClosed, .cardStore-rateValue{
+    font-size: var(--text-size);
+}
+.cardStore-title{
+    font-weight: 500;
+    font-size: var(--title-size);
+}
+.cardStore-stateStoreOpen{
+    color: var(--lightGreen);
+}
+.cardStore-stateStoreClosed{
+    color: var(--darkOrange);
+}
+.cardStore-starRate{
+    color: var(--yellow);
+}
+
+
+
+@media only screen and (max-width : 1920px) {
+
+
+}
+
+@media only screen and (max-width : 1200px) {
+    :root{
+        --title-size:1.8vw;
+        --text-size:1.6vw
+      }
+    .cardStore-linkClosed,.cardStore-link{
+        width: calc(45%);
+    } 
+
+}
+
+
+@media only screen and (max-width : 991px) {
+    :root{
+        --title-size:1.8vw;
+        --text-size:1.6vw
+      }
+
+
+}
+
+@media only screen and (max-width : 800px) {
+    :root{
+        --title-size:2.5vw;
+        --text-size:2vw
+      }
+    .cardStore-linkClosed,.cardStore-link{
+        width: calc(100%);
+    } 
+}
+
+@media only screen and (max-width : 475px ){
+    :root{
+        --title-size: 4vw;
+        --text-size: 3vw;
+      }
+    .cardStore-linkClosed,.cardStore-link{
+        width: calc(100%);
+    } 
+}

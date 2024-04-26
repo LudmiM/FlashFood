@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- iconos -->
+    <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+    <!-- estilos personalizados -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Flash Food</title>
+</head>
+
+<body>
+    <div id="contenedorProductos">
+    </div>
+
+    <button id="abrirCarrito">Abrir Carrito</button>
+
+    <div id="contenedorCarrito">
+        <div class="headerCarrito">
+            <h3>Tu carrito</h3>
+            <i class='bx bx-x' id="cerrarCarrito"></i>
+        </div>
+        
+        <div id="carrito"></div>
+
+        <div id="totales">
+            <p>Cantidad: <span id="cantidadCarrito">0</span></p>
+            <p>Total a pagar: <span id="totalCarrito">$0.00</span></p>
+            <button id="comprar">Comprar</button>
+            <button id="vaciar">Vaciar Carrito</button>
+        </div>
+    </div>
+
+    <script src="./assets/renderizado.js"></script>
+    <script src="./assets/carrito.js"></script>
+</body>

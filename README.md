@@ -1,15 +1,16 @@
 
   ![Flash Food](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/Group%2018tittle.png)
 
-El proyecto del software de gestión de pedidos, denominado "Flash Food", está diseñado para satisfacer las necesidades del sector E-commerce, ofreciendo una solución integral para facilitar la venta de productos en línea. Dirigido especialmente para comercios como a empresas de alimentos, restaurantes y cadenas de comida, como para clientes que quieren pedir comida. Flash Food proporciona una plataforma intuitiva que agiliza el proceso de pedido y entrega, aumentando la eficiencia operativa y mejorando la experiencia del cliente. Con características como
-personalización de los menús de los comercios, estimación en tiempos de entrega, seguimiento en tiempo real de los niveles de stock, gestión completa de pedidos, incluyendo la capacidad de crear, editar, cancelar y rastrear pedidos, y almacenamiento de información de clientes y preferencias, Flash Food ofrece a los usuarios una mayor variedad en los pedidos y herramientas avanzadas para gestionar sus operaciones de manera efectiva. 
+El proyecto del software de gestión de pedidos, denominado "Flash Food", está diseñado para satisfacer las necesidades del sector E-commerce, ofreciendo una solución integral para facilitar la venta de productos on line. Dirigido especialmente para comercios como a empresas de alimentos, restaurantes y cadenas de comida, como para clientes que quieren pedir productos gastronomicos.
+
+Flash Food proporciona una plataforma intuitiva que agiliza el proceso de pedido y entrega, aumentando la eficiencia operativa y mejorando la experiencia del cliente. Con características como personalización de los menús de los comercios, estimación en tiempos de entrega, seguimiento en tiempo real de los niveles de stock, gestión completa de pedidos, incluyendo la capacidad de crear, editar, cancelar y rastrear pedidos, y almacenamiento de información de clientes y preferencias, Flash Food ofrece a los usuarios una mayor variedad en los pedidos y herramientas avanzadas para gestionar sus operaciones de manera practica y sencilla.
+
 Con este proyecto, nuestro objetivo es desarrollar un software desde cero para abordar una necesidad específica en el mercado de tecnología de la información. Además de cumplir con esta demanda del mercado, también nos enfocamos en mejorar nuestras habilidades blandas al trabajar en equipo, así como en fortalecer nuestras habilidades técnicas y teóricas a través de la experiencia directa en el desarrollo de software.
 
   ## Integrantes de la experiencia no Country 
   
 |![](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/backend1.PNG) |
-|-----------------------|
-| [Irvin Martinez](http://www.linkedin.com/in/irvin-martinez-im)         |  
+|-----------------------| 
 | [Ludmila Muñoz](https://www.linkedin.com/in/ludmilaml/)    | 
 
 | ![](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/frontEnd1.PNG) |
@@ -23,12 +24,14 @@ Con este proyecto, nuestro objetivo es desarrollar un software desde cero para a
 
 |![](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/ux.PNG)|
 |-----------|
-|[Guido Gutierrez](https://www.linkedin.com/in/guidoguti%C3%A9rrez/) |
+| [Guido Gutierrez](https://www.linkedin.com/in/guidoguti%C3%A9rrez/) |
 
 
 |![](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/qa.PNG)  |
 |-----------------------|
-| [Agustin Giacomozz](https://www.linkedin.com/in/agustin-giacomozzi-400aa0213/)     |
+
+| [Agustin Giacomozzi](https://www.linkedin.com/in/agustin-giacomozzi-400aa0213/)     |
+
 | [Mariana Carmona](https://www.linkedin.com/in/mariana-carmona-87b7a8180/)|        |
 
 
@@ -39,7 +42,7 @@ Con este proyecto, nuestro objetivo es desarrollar un software desde cero para a
 | NodeJs      | Css|Figma|ScreenRec|
 | MySQL       | Html|     |Excel|
 | Dotenv     | Javascript|
-|  Sequelize              ||
+|  Sequelize              |React|
 |Express|
 
 ## Herramientas usadas por todo el equipo
@@ -55,6 +58,8 @@ Con este proyecto, nuestro objetivo es desarrollar un software desde cero para a
 * Filtro de componentes por categoria.
 * Filtro de ubicacion del usuario
 * Carrito de compras
+* Perfil de tienda
+* 
  ## Algunas pantallas principales de Flash Food
  * Pagina Principal (Home)
    
@@ -66,13 +71,15 @@ Con este proyecto, nuestro objetivo es desarrollar un software desde cero para a
 
  * Perfil de Restaurante/Comercio
    
-![]((https://github.com/No-Country/c17-139-n-js/blob/ff5805082baa05006fd5da77fc68c38f5e9b0ece/Material/ImgsReadMe/perfilTienda.png))
+
+![](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/carta%20de%20retaurante.PNG)
+
 
 * Footer
 
 ![](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/footer.PNG)
 
 ## Documentacion relacionada al proyecto
-### QA
-* [ Plan de Pruebas](https://docs.google.com/document/d/1uNFGGDOqu4Xd_wtQ_n0aTR65lQ-XTUBy005zYHK7LTw/edit#heading=h.z6ne0og04bp5)
-* [Casos de Prueba](https://docs.google.com/spreadsheets/d/1Zdruj0FBOybIfIrOowAq87GgiSN8eQxqP5NDPC0Wfyk/edit)
+#### QA---> [ Plan de Pruebas](https://docs.google.com/document/d/1uNFGGDOqu4Xd_wtQ_n0aTR65lQ-XTUBy005zYHK7LTw/edit#heading=h.z6ne0og04bp5) ,[Casos de Prueba](https://docs.google.com/spreadsheets/d/1Zdruj0FBOybIfIrOowAq87GgiSN8eQxqP5NDPC0Wfyk/edit)  y [Historias de Usuario](https://docs.google.com/document/d/192o-AqNiYILRIHZqI663d4rw9WhDnYAvYOy5pFhhHLc/edit)
+#### UX--->[Analisis e investiacion de diseño](https://www.figma.com/file/qsUDtf5e4EY5Wfr3M4Vvzt/FlashFoodApp?type=design&node-id=0-1&mode=design&t=IAYB7KIsAApGNtuI-0)
+#### Backend---> 
