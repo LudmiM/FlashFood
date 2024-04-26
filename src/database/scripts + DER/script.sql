@@ -84,19 +84,19 @@ INSERT INTO `flashfood`.`favorites` (`idCustomer`, `idCommerce`) VALUES
 
 -- Ordenes
 
-INSERT INTO `flashfood`.`orders` (`idCustomer`, `idState`, `finalPrice`, `createdAt`, `updatedAt`) VALUES
-(10, 1, 35, NOW(), NOW()),
-(9, 2, 50, NOW(), NOW()),
-(3, 3, 40, NOW(), NOW()),
-(4, 1, 30, NOW(), NOW()),
-(5, 2, 55, NOW(), NOW()),
-(6, 3, 60, NOW(), NOW()),
-(7, 1, 45, NOW(), NOW()),
+INSERT INTO `flashfood`.`orders` (`idCustomer`, `idCommerce`, `idState`, `finalPrice`, `createdAt`, `updatedAt`) VALUES
+(10, 2, 1, 35, NOW(), NOW()),
+(9, 2, 2, 50, NOW(), NOW()),
+(3, 4, 3, 40, NOW(), NOW()),
+(4, 3, 1, 30, NOW(), NOW()),
+(5, 3, 2, 55, NOW(), NOW()),
+(6, 4, 3, 60, NOW(), NOW()),
+(7, 5, 1, 45, NOW(), NOW()),
 (8, 2, 50, NOW(), NOW()),
-(10, 3, 65, NOW(), NOW()),
-(9, 1, 70, NOW(), NOW()),
-(3, 2, 80, NOW(), NOW()),
-(4, 3, 75, NOW(), NOW());
+(10, 6, 3, 65, NOW(), NOW()),
+(9, 7, 1, 70, NOW(), NOW()),
+(3, 5, 2, 80, NOW(), NOW()),
+(4, 6, 3, 75, NOW(), NOW());
 
 -- Detalle de orden
 

@@ -1,38 +1,37 @@
 const nodemailer = require('nodemailer');
 
-
 const transporter = nodemailer.createTransport({
-  host: "mail.gmx.com",
+  host: process.env.EMAIL_HOST,
   port: 587,
-  secure: false,
+  secure: false, // Use `true` for port 465, `false` for all other ports
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASSWORD,
   },
 });
 
-const ordenCliente =(fullname)=> `<h1>Hello ${fullname},</h1>
-      <h2>Thank you for join us on our platform. We are excited to have you as a Medic!</h2>
+const ordenCliente =(fullname)=> `<h1>Hola ${fullname},</h1>
+      <h2>Gracias por realizar una comprar en FlashFood! Te adjuntmos el recibo de tu comprar</h2>
       
-      Best regards,
-      Klinika Mercharcovz`;
+      Buen dia,
+      FlashFood`;
 
-const pedidoComercio =(fullname)=> `<h1>Hello ${fullname},</h1>
-      <h2>Thank you for join us on our platform. We are excited to have you as a Patient!</h2>
+const pedidoComercio =(fullname)=> `<h1>Hola ${fullname},</h1>
+      <h2>Recibiste una orden de:</h2>
       
-      Best regards,
-      Klinika Mercharcovz`;
+      Buen dia,
+      FlashFood`;
 
-const cancelarPedido =(invoiceId,status,fullname)=> `<h1>Hello ${fullname},</h1>
+const cancelarPedido =(invoiceId,status,fullname)=> `<h1>Hola ${fullname},</h1>
+      <h2>La orden codigo fue cancelada</h2>
+      
+      Buen dia,
+      FlashFood`;
+
+const contactenos =(invoiceId,status,fullname)=> `<h1>Hola ${fullname},</h1>
       <h2>We want inform you that your invoice #${invoiceId} has been status updated to ${status}!</h2>
       
-      Best regards,
-      Klinika Mercharcovz`;
-
-const contactenos =(invoiceId,status,fullname)=> `<h1>Hello ${fullname},</h1>
-      <h2>We want inform you that your invoice #${invoiceId} has been status updated to ${status}!</h2>
-      
-      Best regards,
-      Klinika Mercharcovz`;
+      Buen dia,
+      FlashFood`;
 
 module.exports = { transporter, cancelarPedido, ordenCliente, pedidoComercio, contactenos }
