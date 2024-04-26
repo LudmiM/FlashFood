@@ -67,7 +67,7 @@ Con este proyecto, nuestro objetivo es desarrollar un software desde cero para a
 
  * Perfil de Restaurante/Comercio
    
-![](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/Perfil%20de%20tienda%20de%20categoria.PNG)
+![](https://github.com/No-Country/c17-139-n-js/blob/develop/Material/ImgsReadMe/carta%20de%20retaurante.PNG)
 
 * Footer
 
