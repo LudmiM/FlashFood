@@ -1,27 +1,41 @@
-.container{
+
+
+  :root{
+    --orange:#F98820;
+    --darkGray: #4D4A4A;
+    --lightGray:#ACABAB;
+    --withe:#FFFFFF;
+    --text-cards-font-family: "Inter", sans-serif;
+    --title-size:2vw;
+    --subtitle-size:1.3vw;
+    --text-size:0.9vw
+  }
+
+.menu-container{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-.productCard {
-    height: 150px;
-    width: 40%;
-    border: 1px solid #ccc;
+.cardMenu{
+    width: calc(45% - 40px);
+    border: none;
     border-radius: 20px;
     padding: 20px;
     margin: 20px;
-    background-color: #9E9C9C;
+    background-color: var(--darkGray);
 }
 
-.productThumbnail {
+.cardMenu-containerThumbnail{
+    width: 50%;
+
+}
+.cardMenu-thumbnail {
     max-width: 100%;
     height: auto;
 }
 
-.discount-container {
-    margin-top: 10px;
-}
-.productLink{
+.cardMenu-link{
+    font-family: var(--text-cards-font-family);
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -31,9 +45,74 @@
     color: inherit;
     cursor: pointer;
 }
-.productTitle{
-    color: #fff;
+.cardMenu-title{
+    font-family: var(--text-cards-font-family);
+    color: var(--withe);
 }
-.productDescription{
-    color: #fff;
+.cardMenu-description{
+    font-family: var(--text-cards-font-family);
+    color: var(--withe);
+    font-size: var(--subtitle-size);
+}
+.cardMenu-pricesContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 15px;
+    align-items: center;
+}
+.cardMenu-finalPrice, .cardMenu-description, .cardMenu-discountPrice, .cardMenu-initialPrice{
+    font-family: var(--text-cards-font-family);
+}
+
+.cardMenu-discountPrice{
+    color: var(--orange);
+    font-weight: 800;
+    font-size: var(--text-size);
+}
+
+.cardMenu-finalPrice{
+    color: var(--lightGray);
+    font-weight: 800;
+    font-size: var(--subtitle-size);
+}
+
+
+.cardMenu-initialPrice{
+    text-decoration: line-through;
+    color: var(--lightGray);
+    font-size: var(--text-size);
+}
+
+
+.cardMenu{
+
+}
+
+
+@media only screen and (min-width : 360px) {
+
+
+}
+
+@media only screen and (max-width : 991px) {
+    :root{
+        --title-size:2vw;
+        --subtitle-size:2.2vw;
+        --text-size:2vw
+      }
+    .cardMenu {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width : 1200px) {
+
+
+}
+
+@media only screen and (max-width : 1920px) {
+
+
 }
