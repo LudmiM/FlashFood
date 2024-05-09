@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registro.css">
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <did class="logo">
+        <img src="./imagenes/Group 13 1.png" alt="imagen de hamburguesa">
+    </did>
+
+    <fieldset>
+        <leyend class="leyenda">Registro</leyend>
+
+        <form method="post" action="">
+ 
+            <input  type="text"     id="nombre"      name="name"        placeholder="Nombre"     required>
+            <input  type="text"     id="apellido"    name="lastName"    placeholder="Apellido"   required>
+            <input  type="email"    id="correo"      name="email"       placeholder="E-mail"     required>
+            <input  type="password" id="contraseña"  name="password"    placeholder="Cree su contraseña"  minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[a-zA-Z]).{8,}$" title="La contraseña debe contener al menos 8 caracteres, una letra mayúscula, una letra minúscula, un número y un carácter especial" required>
+            
+            <button type="submit"   id="enviar">Enviar</button>
+        
+        </form>
+               
+    </fieldset>
+    
+</body>
+</html>

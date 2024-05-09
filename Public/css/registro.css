@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    
+   
+}
+body{
+    text-align: center;
+    height: 100%;
+    width: 100vw;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #F98820 0%, #8b420e 90%);
+    background-repeat: no-repeat;
+}
+
+.logo img {
+   display: none;
+    
+}
+
+fieldset{
+    
+    align-items: center;
+    background: linear-gradient(180deg, #1a1a1a,#1e1e1e ,#0a0a0a);
+    width: 70%;
+    height: auto;
+    border-radius: 22px;
+    text-align: center;
+    margin: 60px auto;
+    
+}
+
+.leyenda{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    margin: 25px auto;
+    text-align: center;
+    color: #f1e8e8;
+    align-items: center;
+    
+}
+
+form{
+    text-align: center;
+    width: 100%;
+   
+}
+
+form input{
+    display: block;
+    width: 75%;
+    height: 40px;
+    margin: 3% 10%;
+    border-radius: 10px;
+    color: #3f3a3a;
+    align-items: center;
+}
+
+#enviar{
+    width:30% ;
+    height: 32px;
+    border-radius: 25px;
+    background: #f1e8e8;
+    border: 2px solid #4d4747;
+    background-color: #f7f7f7;
+    color: #3f3a3a;
+    margin-top: 5px;
+    
+}
+
+#enviar:hover {
+    width: 35%;
+    height: 36px;
+    border: 3px solid #865c02;
+    
+}
+
+.leyenda:hover {
+    font-size: 28px;
+}
+
+
+@media (min-width: 580px){
+ 
+    .logo img {
+        text-align: center;
+        padding: 5% 9%;
+        width: 45%;
+        height: 39%;
+        float: left;
+        display: flex;
+        rotate: 5deg;
+    }
+
+    fieldset {
+        width: 30%;
+        padding-bottom: 30px;
+        margin-bottom: 80px;
+    }
+}
+

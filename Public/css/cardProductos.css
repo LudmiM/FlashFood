@@ -1,0 +1,39 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.productCard {
+    height: 150px;
+    width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #9E9C9C;
+}
+
+.productThumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+.discount-container {
+    margin-top: 10px;
+}
+.productLink{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.productTitle{
+    color: #fff;
+}
+.productDescription{
+    color: #fff;
+}

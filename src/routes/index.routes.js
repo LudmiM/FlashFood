@@ -8,6 +8,9 @@ const locationRoutes = require('./location.routes');
 const orderRoutes = require('./order.routes');
 
 router
+    .get('/', (req, res) => {
+        res.render('index');
+    })
     .use('/commerce', commerceRoutes) 
     .use('/customer', customerRoutes) 
     .use('/product', productRoutes) 
