@@ -1,0 +1,210 @@
+Todos los productos:
+{
+  "meta": {
+    "status": 201,
+    "url": "http://localhost:3000/product/"
+  },
+  "data": [
+    {
+      "id": 1,
+      "name": "Pizza Margherita",
+      "idCategory": 1,
+      "idCommerce": 3,
+      "description": "Pizza con tomate, mozzarella y albahaca.",
+      "price": 12,
+      "available": 20,
+      "image": "03_pizza.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Burrito de Carne",
+      "idCategory": 2,
+      "idCommerce": 3,
+      "description": "Burrito de carne asada con guacamole.",
+      "price": 10,
+      "available": 15,
+      "image": "03_burrito.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Nigiri de Salmón",
+      "idCategory": 3,
+      "idCommerce": 3,
+      "description": "Nigiri de salmón fresco sobre arroz.",
+      "price": 8,
+      "available": 30,
+      "image": "03_nigiri.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Croissants",
+      "idCategory": 4,
+      "idCommerce": 4,
+      "description": "Croissants recién horneados.",
+      "price": 3,
+      "available": 50,
+      "image": "04_croissants.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Choripán",
+      "idCategory": 5,
+      "idCommerce": 4,
+      "description": "Choripán con chimichurri.",
+      "price": 6,
+      "available": 25,
+      "image": "04_choripan.jpg"
+    }
+  ],
+  "ok": true
+}
+Todos los comercios:
+{
+  "meta": {
+    "status": 201,
+    "url": "http://localhost:3000/commerce/"
+  },
+  "data": [
+    {
+      "id": 1,
+      "name": "commerce",
+      "email": "commerce@gmail.com",
+      "idLocation": null,
+      "image": null,
+      "coverImage": null,
+      "phone": null,
+      "Location": null
+    },
+    {
+      "id": 2,
+      "name": "La Pizzería",
+      "email": "pizzeria@gmail.com",
+      "idLocation": 8,
+      "image": "pizzeria.jpg",
+      "coverImage": "coverImage.jpg",
+      "phone": 1134562789,
+      "Location": {
+        "id": 8,
+        "country": "AR",
+        "province": "Chubut",
+        "city": "Comodoro Rivadavia",
+        "comment": "Casa de 2 pisos, con puerta gris",
+        "address": "Rivadavia 909",
+        "idCustomer": null
+      }
+    },
+    {
+      "id": 3,
+      "name": "El Rincón Mexicano",
+      "email": "rincon.mexicano@gmail.com",
+      "idLocation": 5,
+      "image": "mexicano.jpg",
+      "coverImage": "coverImage.jpg",
+      "phone": 1134562789,
+      "Location": {
+        "id": 5,
+        "country": "AR",
+        "province": "San Juan",
+        "city": "San Juan",
+        "comment": "Casa de 2 pisos, con puerta gris",
+        "address": "25 de Mayo 606",
+        "idCustomer": null
+      }
+    },
+    {
+      "id": 4,
+      "name": "Sushi House",
+      "email": "sushi.house@gmail.com",
+      "idLocation": 6,
+      "image": "sushi.jpg",
+      "coverImage": "coverImage.jpg",
+      "phone": 1134562789,
+      "Location": {
+        "id": 6,
+        "country": "AR",
+        "province": "La Pampa",
+        "city": "Santa Rosa",
+        "comment": "Casa de 2 pisos, con puerta gris",
+        "address": "Avenida Luro 707",
+        "idCustomer": null
+      }
+    },
+    {
+      "id": 5,
+      "name": "Panadería Delicias",
+      "email": "panaderia.delicias@gmail.com",
+      "idLocation": 7,
+      "image": "panaderia.jpg",
+      "coverImage": "coverImage.jpg",
+      "phone": 1134562789,
+      "Location": {
+        "id": 7,
+        "country": "AR",
+        "province": "Neuquén",
+        "city": "Neuquén",
+        "comment": "Casa de 2 pisos, con puerta gris",
+        "address": "Avenida Argentina 808",
+        "idCustomer": null
+      }
+    }
+  ],
+  "ok": true
+}
+Todos los clientes
+{
+  "meta": {
+    "status": 201,
+    "url": "http://localhost:3000/customer/"
+  },
+  "data": [
+    {
+      "id": 1,
+      "name": "user",
+      "lastName": "admin",
+      "email": "admin@gmail.com",
+      "phone": null,
+      "image": null
+    },
+    {
+      "id": 2,
+      "name": "user",
+      "lastName": "customer",
+      "email": "customer@gmail.com",
+      "phone": null,
+      "image": null
+    },
+    {
+      "id": 3,
+      "name": "Carlos",
+      "lastName": "Gómez",
+      "email": "carlos.gomez@gmail.com",
+      "phone": 2216765342,
+      "image": "image1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Juan",
+      "lastName": "Martínez",
+      "email": "juan.martinez@gmail.com",
+      "phone": 2216765342,
+      "image": "image2.jpg"
+    },
+    {
+      "id": 5,
+      "name": "María",
+      "lastName": "Fernández",
+      "email": "maria.fernandez@gmail.com",
+      "phone": 2216765342,
+      "image": "image3.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Laura",
+      "lastName": "Pérez",
+      "email": "laura.perez@gmail.com",
+      "phone": 2216765342,
+      "image": "image4.jpg"
+    }
+  ],
+  "ok": true
+}

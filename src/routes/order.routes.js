@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const checkRol = require('./../middleware/checkRol');
-const { cancel, create, get } =  require('./../controllers/Review');
+const { cancel, create, get } =  require('./../controllers/Order');
 
 router
     .get('/',checkRol.Logged,get)
